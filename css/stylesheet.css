@@ -212,28 +212,28 @@ img{
 @media only screen and (max-width: 414px){
 	#top p{
 		font-size: 10px;
-		width: 5.5rem;
-		height: 5.5rem;
-		line-height: 5.5rem;
+		width: 6rem;
+		height: 6rem;
+		line-height: 6rem;
 	}
 	#top > a{
 		font-size: 10px;
-		width: 5.5rem;
-		height: 5.5rem;
-		line-height: 5.5rem;
+		width: 6rem;
+		height: 6rem;
+		line-height: 6rem;
 	}
 	.pirouette{
-		top: 5%;
+		top: 3%;
 		left: 35%;
 		background-color: #ff9e9e;
 	}
 	.teachers{
-		top: 25%;
+		top: 27%;
 		left: 35%;
 		background-color: #ff8ec6;
 	}
 	.evsche{
-		top: 50%;
+		top: 51%;
 		left: 35%;
 		background-color: #ff8eff;
 	}
@@ -243,7 +243,7 @@ img{
 		background-color: #8e8eff;
 	}
 	.library{
-		top: 90%;
+		top: 99%;
 		left: 35%;
 		background-color: #8eff8e;
 	}
