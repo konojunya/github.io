@@ -212,15 +212,15 @@ img{
 @media only screen and (max-width: 414px){
 	#top p{
 		font-size: 10px;
-		width: 6rem;
-		height: 6rem;
-		line-height: 6rem;
+		width: 5.5rem;
+		height: 5.5rem;
+		line-height: 5.5rem;
 	}
 	#top > a{
 		font-size: 10px;
-		width: 6rem;
-		height: 6rem;
-		line-height: 6rem;
+		width: 5.5rem;
+		height: 5.5rem;
+		line-height: 5.5rem;
 	}
 	.pirouette{
 		top: 5%;
@@ -228,7 +228,7 @@ img{
 		background-color: #ff9e9e;
 	}
 	.teachers{
-		top: 30%;
+		top: 25%;
 		left: 35%;
 		background-color: #ff8ec6;
 	}
@@ -238,7 +238,7 @@ img{
 		background-color: #ff8eff;
 	}
 	.lessche{
-		top: 70%;
+		top: 75%;
 		left: 35%;
 		background-color: #8e8eff;
 	}
