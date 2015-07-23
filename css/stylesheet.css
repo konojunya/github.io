@@ -212,15 +212,15 @@ img{
 @media only screen and (max-width: 414px){
 	#top p{
 		font-size: 10px;
-		width: 6.5rem;
-		height: 6.5rem;
-		line-height: 6.5rem;
+		width: 6rem;
+		height: 6rem;
+		line-height: 6rem;
 	}
 	#top > a{
 		font-size: 10px;
-		width: 6.5rem;
-		height: 6.5rem;
-		line-height: 6.5rem;
+		width: 6rem;
+		height: 6rem;
+		line-height: 6rem;
 	}
 	.pirouette{
 		top: 5%;
