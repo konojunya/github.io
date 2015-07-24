@@ -5,7 +5,7 @@ body,html{
 	height: 100%;
 	background-image: url(../img/slider/slider1.png);
 	background-size: contain;
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	-webkit-animation-name: bgi;
 	-o-animation-name: bgi;
 	animation-name: bgi;
