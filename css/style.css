@@ -1,0 +1,31 @@
+body {
+	background-color: orange; 
+    text-align: center; 
+}
+
+p {
+  font-size: 50px;
+  font-weight: bold;
+  color: deeppink;
+}
+
+.btn {
+	background-color: green;
+	color: white;
+	margin: 10px;
+	font-size: 30px;
+	border-radius: 10px;
+}
+
+img {
+	width: auto; 
+	max-height: 350px;
+}
+
+#message {
+	margin: 10px;
+}
+
+#textbox {
+	width: 180px;
+}
