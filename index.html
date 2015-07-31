@@ -6,7 +6,7 @@
 	<title>暇人なう</title>
 </head>
 <body>
-	<div id="flog"><img src="./flog.png" alt=""></div>
+	<div id="flog"></div>
 	<div id="textarea">
 		<p><input type="text" id="usertext"></p>
 		<p><button class="btn" onclick="tweet()">話しかける</button></p>
@@ -23,18 +23,28 @@
 	#flog{
 		width: 100%;
 		height: 100%;
-		overflow: hidden;
-		margin: 0 auto;
-		text-align: center;
+		background-image: url(./flog.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	#textarea{
 		width: 100%;
 		position: absolute;
-		top: 90%;
+		top: 70%;
 		text-align: center;
 	}
 	.btn{
 		width: 10%;
+	}
+	@media only screen and (max-width: 414px){
+		#textarea{
+			position: absolute;
+			top: 60%;
+		}
+		.btn{
+			width: 30%;
+		}
 	}
 </style>
 <script type="text/javascript">
