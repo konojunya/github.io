@@ -1,0 +1,249 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Bad+Script);
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+/* menu */
+.menu{
+	overflow: hidden;
+	width: 100%;
+	height: 7%;
+	border-bottom: 1px solid gray;
+	background-color: #F3F3F3;
+}
+.menu li{
+	list-style: none;
+	color: black;
+	float: left;
+	width: 25%;
+	background-color: #F3F3F3;
+	text-align: center;
+	line-height: 3rem;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 0.2rem;
+	cursor: pointer;
+}
+.menu li:hover{
+	background-color: rgba(0,0,0,0.8);
+	color: #F3F3F3;
+}
+/*
+
+animation
+
+*/
+.history_animation{
+	position: absolute;
+	left: 25%!important;
+}
+.skill_animation{
+	position: absolute;
+	left: 25%!important;
+}
+.contact_animation{
+	position: absolute;
+	left: 25%!important;
+}
+.animation_opacity{
+	opacity: 0;
+}
+.animation_trans{
+	position: absolute;
+	left: 7%;
+	-webkit-animation-name: trans;
+	-o-animation-name: trans;
+	animation-name: trans;
+	-webkit-animation: trans 1s;
+	-o-animation: trans 1s;
+	animation: trans 1s;
+}
+@-webkit-keyframes trans {
+	0%{
+		transform: translate(300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+@-o-keyframes trans {
+	0%{
+		transform: translate(300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+@-moz-keyframes trans {
+	0%{
+		transform: translate(300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+@keyframes trans {
+	0%{
+		transform: translate(300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+.animation_retrans{
+	position: relative;
+	left: 0%;
+	-webkit-animation-name: retrans;
+	-o-animation-name: retrans;
+	animation-name: retrans;
+	-webkit-animation: retrans 1.3s;
+	-o-animation: retrans 1.3s;
+	animation: retrans 1.3s;
+}
+@-webkit-keyframes retrans {
+	0%{
+		transform: translate(-300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+@-o-keyframes retrans {
+	0%{
+		transform: translate(-300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+@-moz-keyframes retrans {
+	0%{
+		transform: translate(-300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+@keyframes retrans {
+	0%{
+		transform: translate(-300%,0px);
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+/* main */
+.main{
+	width: 100%;
+	height: 88%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.top_1{
+	width: 100%;
+	height: 20%;
+	background-color: #F3F3F3;
+}
+.top_2{
+	width: 100%;
+	height: 80%;
+	background-color: #F3F3F3;
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+.top_2 img{
+	width: 10rem;
+	border-radius: 50%;
+}
+.top_2 img + p{
+	line-height: 5rem;
+	font-size: 2rem;
+	font-family: 'Bad Script', cursive;
+}
+.top_2 img + p + p{
+	line-height: 2rem;
+	font-size: 1.5rem;
+	font-family: 'Reenie Beanie', cursive;
+}
+.top_2 img + p + p + p{
+	line-height: 2rem;
+	font-size: 1.5rem;
+	font-family: 'Reenie Beanie', cursive;
+}
+/* cards */
+.history_card{
+	position: absolute;
+	top: 10%;
+	left: 200%;
+	width: 70%;
+	height: 80%;
+	z-index: 96;
+	border: 5px double gray;
+	background-color: #F3F3F3;
+}
+.history_card h2{
+	text-align: center;
+	line-height: 4rem;
+	font-family: 'Fjalla One', sans-serif;
+}
+.history_card ul{
+	list-style: circle;
+	padding-left: 10%;
+}
+.skill_card{
+	position: absolute;
+	top: 10%;
+	left: 200%;
+	width: 70%;
+	height: 80%;
+	z-index: 97;
+	border: 5px double gray;
+	background-color: #F3F3F3;
+}
+.skill_card h2{
+	text-align: center;
+	line-height: 4rem;
+	font-family: 'Fjalla One', sans-serif;
+}
+.contact_card{
+	position: absolute;
+	top: 10%;
+	left: 200%;
+	width: 70%;
+	height: 80%;
+	z-index: 98;
+	border: 5px double gray;
+	background-color: #F3F3F3;
+}
+.contact_card h2{
+	text-align: center;
+	line-height: 4rem;
+	font-family: 'Fjalla One', sans-serif;
+}
+/* footer */
+#footer{
+	width: 100%;
+	height: 5%;
+	background-color: black;
+	text-align: center;
+}
+#footer small{
+	color: white;
+	letter-spacing: 0.4rem;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 0.3rem;
+}
