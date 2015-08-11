@@ -1,9 +1,9 @@
 @charset "utf-8";@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);@import url(http://fonts.googleapis.com/css?family=Bad+Script);@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);@import url(http://fonts.googleapis.com/css?family=Fjalla+One);body,html{width:100%;height:100%}
-*{margin:0;padding:0}body>i{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:#ff4d3a;cursor:pointer}#main{width:100%;height:97%;overflow-y:scroll}
+*{margin:0;padding:0}body>i{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:#ff4d3a;cursor:pointer}#main{width:100%;height:97%;overflow-y:scroll;-webkit-overflow-scrolling:touch}
 .home{width:100%;height:100%;background-color:#f3f3f3;text-align:center}.home .image{padding:5% 0 2%}.home .image img{width:20%;border-radius:50%}.home p{font-size:2rem;color:black}
 .home .image+p{font-family:'Bad Script',cursive}.home .image+p+p{line-height:50px;font-family:'Reenie Beanie',cursive}
 .home .image+p+p+p{line-height:50px;font-family:'Reenie Beanie',cursive}.history{width:100%;height:200%;background:#f3f3f3}h2{text-align:center;line-height:5rem;font-size:3rem;font-family:'Fjalla One',sans-serif}
-.history .history-contents{margin:0 auto;width:80%;height:90%;overflow:scroll;border:3px dashed rgba(0,0,255,0.4)}.history .history-contents ul{list-style:circle;padding-left:10%;padding-top:3%}
+.history .history-contents{margin:0 auto;width:80%;height:90%;overflow:scroll;-webkit-overflow-scrolling:touch;border:3px dashed rgba(0,0,255,0.4)}.history .history-contents ul{list-style:circle;padding-left:10%;padding-top:3%}
 .history .history-contents ul li{line-height:2rem}.skill{width:100%;height:120%;background-color:#16156e}.skill h2{color:white;padding-bottom:3%}.skill .graph{position:relative;margin:20px auto;width:300px;border:1px solid #fff;padding:2px}
 .skill .bar{display:block;position:relative;background:#fff;text-align:center;color:#16156e;height:2em;line-height:2em}.skill p{color:#fff;text-align:center}
 .contact{width:100%;height:100%;text-decoration:none}.contact h2{color:#16156e;padding-bottom:3%}.contact .sns{width:80%;height:70%;margin:0 auto;text-align:center}
