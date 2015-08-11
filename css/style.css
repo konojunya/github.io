@@ -21,7 +21,7 @@ body > i{
 	text-align: center;
 	color: #FF4D3A;
 	cursor: pointer;
-	z-index: 10;
+	z-index: 100;
 }
 #main{
 	width: 100%;
