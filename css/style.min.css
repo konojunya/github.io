@@ -8,7 +8,7 @@
 .skill .bar{display:block;position:relative;background:#fff;text-align:center;color:#16156e;height:2em;line-height:2em}.skill p{color:#fff;text-align:center}
 .contact{width:100%;height:100%;text-decoration:none}.contact h2{color:#16156e;padding-bottom:3%}.contact .sns{width:80%;height:70%;margin:0 auto;text-align:center}
 .contact .sns i{color:black;margin:15% 10%}.fa-twitter:hover{color:#377bd3!important}.fa-facebook:hover{color:#314887!important}.fa-google-plus:hover{color:#bb4836!important}
-#footer{width:100%;height:3%;background-color:#f3f3f3;color:black;letter-spacing:.4rem;text-align:center;font-family:'PT Sans Narrow',sans-serif}
+#footer{width:100%;height:5%;background-color:#f3f3f3;color:black;letter-spacing:.4rem;text-align:center;font-family:'PT Sans Narrow',sans-serif}
 @media only screen and (max-width:375px){body>i{position:fixed;right:10px;bottom:5px}.home .image{padding:30% 0 2%}.home .image img{width:45%;border-radius:50%}
 .history .history-contents{margin:0 auto;width:80%;height:90%;overflow:scroll;border:3px dashed rgba(0,0,255,0.4)}.history .history-contents ul{list-style:circle;padding-left:10%;padding-top:3%}
 .history .history-contents ul li{line-height:1.5rem;font-size:7px}.skill .graph{position:relative;margin:20px auto;width:200px;border:1px solid #fff;padding:2px}
