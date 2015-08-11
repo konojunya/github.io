@@ -3,11 +3,6 @@
 @import url(http://fonts.googleapis.com/css?family=Bad+Script);
 @import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
-/*font-family: 'Bad Script', cursive;
-font-family: 'Reenie Beanie', cursive;
-font-family: 'Fjalla One', sans-serif;
-font-family: 'PT Sans Narrow', sans-serif;
-*/
 body,
 html{
 	width: 100%;
@@ -176,4 +171,72 @@ footer
 	letter-spacing: .4rem;
 	text-align: center;
 	font-family: 'PT Sans Narrow', sans-serif;
+}
+/*
+
+スマホ レスポンシブ
+
+*/
+@media only screen and (max-width: 375px){
+	body > i{
+		position: fixed;
+		right: 10px;
+		bottom: 5px;
+	}
+	/*
+
+	home
+
+	*/
+	.home .image{
+		padding: 40% 0 2%;
+	}
+	.home .image img{
+		width: 45%;
+		border-radius: 50%;
+	}
+	/*
+
+	history
+
+	*/
+	.history .history-contents{
+		margin: 0 auto;
+		width: 80%;
+		height: 90%;
+		overflow: scroll;
+		border: 3px dashed rgba(0,0,255,0.4);
+	}
+	.history .history-contents ul{
+		list-style: circle;
+		padding-left: 10%;
+		padding-top: 3%;
+
+	}
+	.history .history-contents ul li{
+		line-height: 1.5rem;
+		font-size: 10px;
+	}
+	/*
+
+	skill
+
+	*/
+	.skill .graph{
+		position: relative;
+	    margin: 20px auto;
+	    width: 200px;
+	    border: 1px solid #fff;
+	    padding: 2px;
+	}
+	/*
+
+	contact
+
+	*/
+	.contact .sns i{
+		display: block;
+		margin: 40% auto;
+		font-size: 70px;
+	}
 }
