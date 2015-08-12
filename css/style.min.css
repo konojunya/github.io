@@ -1,5 +1,5 @@
 @charset "utf-8";@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);@import url(http://fonts.googleapis.com/css?family=Bad+Script);@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);@import url(http://fonts.googleapis.com/css?family=Fjalla+One);body,html{width:100%;height:100%;background-color:#f3f3f3;-webkit-overflow-scrolling:touch}
-*{margin:0;padding:0}body>i{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:#ff4d3a;cursor:pointer;z-index:1000}.home{width:100%;height:100%;background-color:#f3f3f3;text-align:center}
+*{margin:0;padding:0}body>i{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:black;cursor:pointer;z-index:1000}.home{width:100%;height:100%;background-color:#f3f3f3;text-align:center}
 .home .image{padding:5% 0 2%}.home .image img{width:20%;border-radius:50%}.home p{font-size:2rem;color:black}.home .image+p{font-family:'Bad Script',cursive}
 .home .image+p+p{line-height:50px;font-family:'Reenie Beanie',cursive}.home .image+p+p+p{line-height:50px;font-family:'Reenie Beanie',cursive}
 .history{width:100%;height:200%;background:#f3f3f3}h2{color:black;padding-bottom:7%;text-align:center;line-height:5rem;font-size:3rem;font-family:'Fjalla One',sans-serif}
