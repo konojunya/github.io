@@ -7,6 +7,7 @@ body,
 html{
 	width: 100%;
 	height: 100%;
+	background-color: #f3f3f3;
 }
 *{
 	margin: 0;
@@ -25,8 +26,8 @@ body > i{
 }
 #main{
 	width: 100%;
-	height: 97%;
-	overflow-y: scroll;
+	height: 95%;
+	overflow-y: scroll; 
 	-webkit-overflow-scrolling: touch;
 }
 /*
@@ -73,6 +74,12 @@ history
 	background: #f3f3f3;
 }
 h2{
+	display: block;
+	margin: 10% auto 10%;
+	width: 35%;
+	border-bottom: 5px solid gray;
+	color: black;
+	padding-bottom: 7%;
 	text-align: center;
 	line-height: 5rem;
 	font-size: 3rem;
@@ -84,7 +91,7 @@ h2{
 	height: 90%;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
-	border: 3px dashed rgba(0,0,255,0.4);
+	background-color: white;
 }
 .history .history-contents ul{
 	list-style: circle;
@@ -102,30 +109,28 @@ skill
 */
 .skill{
 	width: 100%;
-	height: 120%;
-	background-color: #16156E;
-}
-.skill h2{
-	color: white;
-	padding-bottom: 3%;
+	height: 100%;
+	background-color: #f3f3f3;
 }
 .skill .graph{
+	background-color: white#68A0FF;
 	position: relative;
     margin: 20px auto;
     width: 300px;
-    border: 1px solid #fff;
+    border: 1px solid black;
     padding: 2px;
 }
-.skill .bar{  display: block;
+.skill .bar{
+	display: block;
     position: relative;
-    background: #fff;
+    background-color: #68A0FF;
     text-align: center;
-    color: #16156e;
+    color: black;
     height: 2em;
     line-height: 2em;
 }
 .skill p{
-	color: #fff;
+	color: black;
 	text-align: center;
 }
 /*
@@ -137,9 +142,10 @@ contact
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
+	background-color: #f3f3f3;
 }
 .contact h2{
-	color: #16156E;
+	color: black;
 	padding-bottom: 3%;
 }
 .contact .sns{
@@ -147,6 +153,9 @@ contact
 	height: 70%;
 	margin: 0 auto;
 	text-align: center;
+}
+.contact .sns a{
+	text-decoration: none;
 }
 .contact .sns i{
 	color: black;
@@ -209,7 +218,6 @@ footer
 		width: 80%;
 		height: 90%;
 		overflow: scroll;
-		border: 3px dashed rgba(0,0,255,0.4);
 	}
 	.history .history-contents ul{
 		list-style: circle;
@@ -241,6 +249,6 @@ footer
 	.contact .sns i{
 		display: block;
 		margin: 40% auto;
-		font-size: 70px;
+		font-size: 60px;
 	}
 }
