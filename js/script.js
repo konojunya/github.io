@@ -1,6 +1,6 @@
 $(function(){
 	$('i').click(function(){
-		$("#main").animate({scrollTop:0},1000);
+		$("body").animate({scrollTop:0},1000);
 	});
 });
 function set2fig(num) {
