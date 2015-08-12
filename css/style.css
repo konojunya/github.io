@@ -49,13 +49,16 @@ home
 }
 .home .image + p{
 	font-family: 'Bad Script', cursive;
+	font-size: 40px;
 }
 .home .image + p + p{
-	line-height: 50px;
+	line-height: 30px;
+	font-size: 25px;
 	font-family: 'Reenie Beanie', cursive;
 }
 .home .image + p + p + p{
-	line-height: 50px;
+	line-height: 30px;
+	font-size: 25px;
 	font-family: 'Reenie Beanie', cursive;
 }
 /*
