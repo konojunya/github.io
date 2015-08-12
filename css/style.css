@@ -167,12 +167,13 @@ footer
 */
 #footer{
 	width: 100%;
-	height: 10%;
+	height: 7%;
 	background-color: #f3f3f3;
 	color: black;
 	letter-spacing: .4rem;
 	text-align: center;
 	font-family: 'PT Sans Narrow', sans-serif;
+	padding-top: 7%;
 }
 /*
 
