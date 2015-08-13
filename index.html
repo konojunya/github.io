@@ -15,6 +15,36 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.min.css">
 	<link href="./css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script src="http://www.google.com/jsapi"></script>
+	<script>
+		google.load("feeds","1");
+
+		function initialize(){
+			var feed = new google.feeds.Feed('http://rssblog.ameba.jp/konojunya0303/rss.html');
+
+			feed.setNumEntries(20);
+			feed.includeHistoricalEntries();
+			feed.load(function(result){
+				if(!result.error){
+					var container = document.getElementById('feed');
+					for (i = 0; i < result.feed.entries.length; i++){
+						var entry = result.feed.entries[i];
+
+						var link = document.createElement("a");
+						link.href = entry.link;
+						link.appendChild(document.createTextNode(entry.title));
+
+						var li = document.createElement("li");
+						li.appendChild(link);
+
+						container.appendChild(li);
+					}
+				}
+			});
+		}
+
+		google.setOnLoadCallback(initialize);
+	</script>
 </head>
 <body>
 	<i class="fa fa-chevron-up fa-2x"></i>
@@ -142,6 +172,22 @@
 			<a href="http://twitter.com/konojunya" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
 			<a href="https://www.facebook.com/profile.php?id=100007518556907" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
 			<a href="https://plus.google.com/u/0/105417723146736076728/posts" target="_blank"><i class="fa fa-google-plus fa-4x"></i></a>
+		</div>
+	</div>
+	<div class="feed">
+		<div class="ameblo">
+			<p class="ameblo-head">Ameblo</p>
+			<div class="ameblo-contents">
+				<ul id="feed"></ul>
+			</div>
+		</div>
+		<div class="twitter">
+			<p class="twitter-head">Twitter</p>
+			<div class="twitter-contents">
+				<a class="twitter-timeline" href="https://twitter.com/konojunya" data-widget-id="623906180763521024">@konojunyaさんのツイート</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+				</script>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
