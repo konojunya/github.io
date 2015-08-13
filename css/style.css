@@ -73,7 +73,7 @@ history
 }
 h2{
 	color: black;
-	padding-top: 5%;
+	padding-top: 7%;
 	padding-bottom: 7%;
 	text-align: center;
 	line-height: 5rem;
@@ -104,7 +104,7 @@ skill
 */
 .skill{
 	width: 100%;
-	height: 120%;
+	height: 100%;
 	background-color: #f3f3f3;
 }
 .skill .graph{
@@ -135,13 +135,9 @@ contact
 */
 .contact{
 	width: 100%;
-	height: 120%;
+	height: 100%;
 	text-decoration: none;
 	background-color: #f3f3f3;
-}
-.contact h2{
-	color: black;
-	padding-bottom: 3%;
 }
 .contact .sns{
 	width: 80%;
@@ -284,6 +280,9 @@ footer
 	skill
 
 	*/
+	.skill{
+		height: 120%;
+	}
 	.skill .graph{
 		position: relative;
 	    margin: 20px auto;
@@ -296,6 +295,9 @@ footer
 	contact
 
 	*/
+	.contact{
+		height: 150%;
+	}
 	.contact .sns i{
 		display: block;
 		margin: 40% auto;
