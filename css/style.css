@@ -184,7 +184,6 @@ feed
 	height: 100%;
 }
 .feed .ameblo-contents{
-	width: 100%;
 	height: 100%;
 	overflow: scroll;
 }
@@ -195,7 +194,6 @@ feed
 }
 .feed .twitter-contents{
 	margin: 0 auto;
-	width: 100%;
 	height: 100%;
 	overflow: scroll;
 }
@@ -310,12 +308,12 @@ footer
 	*/
 	.feed .twitter{
 		float: left;
-		width: 50%;
+		width: 60%;
 		height: 100%;
 	}
 	.feed .ameblo{
 		float: left;
-		width: 50%;
+		width: 40%;
 		height: 100%;
 	}
 	.feed li{

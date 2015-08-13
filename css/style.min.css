@@ -9,10 +9,10 @@
 .contact{width:100%;height:100%;text-decoration:none;background-color:#f3f3f3}.contact .sns{width:80%;height:70%;margin:0 auto;text-align:center}.contact .sns a{text-decoration:none}
 .contact .sns i{color:black;margin:15% 10%}.fa-twitter:hover{color:#377bd3!important}.fa-facebook:hover{color:#314887!important}.fa-google-plus:hover{color:#bb4836!important}
 .feed{width:100%;height:50%;background-color:#f3f3f3}.feed li{display:block;width:30%;padding:1%;margin:0 auto 1%;background-color:#f3f3f3}.feed .ameblo{float:left;width:40%;height:100%}
-.feed .ameblo-contents{width:100%;height:100%;overflow:scroll}.feed .twitter{float:right;width:40%;height:100%}.feed .twitter-contents{margin:0 auto;width:100%;height:100%;overflow:scroll}
+.feed .ameblo-contents{height:100%;overflow:scroll}.feed .twitter{float:right;width:40%;height:100%}.feed .twitter-contents{margin:0 auto;height:100%;overflow:scroll}
 .ameblo-head{text-align:center;color:green}.twitter-head{text-align:center;color:skyblue}#footer{width:100%;height:7%;background-color:#f3f3f3;color:black;letter-spacing:.4rem;text-align:center;font-family:'PT Sans Narrow',sans-serif;padding-top:7%}
 @media only screen and (max-width:414px){body>i{position:fixed;right:10px;bottom:5px;z-index:1000}.home .image{padding:30% 0 2%}.home .image img{width:45%;border-radius:50%}
 .history .history-contents{margin:0 auto;width:80%;height:90%;overflow:scroll}.history .history-contents ul{list-style:circle;padding-left:10%;padding-top:3%}
 .history .history-contents ul li{line-height:1.5rem;font-size:7px}.skill{height:120%}.skill .graph{position:relative;margin:20px auto;width:200px;border:1px solid #fff;padding:2px}
-.contact{height:150%}.contact .sns i{display:block;margin:40% auto;font-size:60px}.feed .twitter{float:left;width:50%;height:100%}.feed .ameblo{float:left;width:50%;height:100%}
+.contact{height:150%}.contact .sns i{display:block;margin:40% auto;font-size:60px}.feed .twitter{float:left;width:60%;height:100%}.feed .ameblo{float:left;width:40%;height:100%}
 .feed li{display:block;width:800%;padding:1%;margin:0 auto 1%;font-size:8px}}
