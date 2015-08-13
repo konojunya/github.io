@@ -185,7 +185,7 @@ feed
 }
 .feed .ameblo-contents{
 	height: 100%;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 .feed .twitter{
 	float: right;
