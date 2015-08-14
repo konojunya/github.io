@@ -173,23 +173,24 @@ feed
 }
 .feed li{
 	display: block;
-	width: 30%;
+	width: 90%;
 	padding: 1%;
 	margin: 0 auto 1%;
 	background-color: #f3f3f3;
 }
 .feed .ameblo{
 	float: left;
-	width: 40%;
+	width: 45%;
 	height: 100%;
 }
 .feed .ameblo-contents{
 	height: 100%;
+	overflow-x: hidden;
 	overflow-y: scroll;
 }
 .feed .twitter{
 	float: right;
-	width: 40%;
+	width: 45%;
 	height: 100%;
 }
 .feed .twitter-contents{
