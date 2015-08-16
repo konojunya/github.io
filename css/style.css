@@ -17,7 +17,7 @@ html{
 	margin: 0;
 	padding: 0;
 }
-body > i{
+.wrapper > i{
 	position: fixed;
 	right: 50px;
 	bottom: 30px;
