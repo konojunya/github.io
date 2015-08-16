@@ -17,7 +17,7 @@ html{
 	margin: 0;
 	padding: 0;
 }
-.wrapper > i{
+body > i{
 	position: fixed;
 	right: 50px;
 	bottom: 30px;
@@ -27,9 +27,6 @@ html{
 	color: black;
 	cursor: pointer;
 	z-index: 1000;
-}
-.wrapper{
-	/*display: none;*/
 }
 /*
 
