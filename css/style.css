@@ -28,6 +28,9 @@ body > i{
 	cursor: pointer;
 	z-index: 1000;
 }
+.wrapper{
+	display: none;
+}
 /*
 
 home
@@ -315,6 +318,9 @@ footer
 	.like .like-contents h3{
 		font-size: 2rem;
 		padding: 5% 0;
+	}
+	.like input{
+		font-size: 16px;
 	}
 	/*
 

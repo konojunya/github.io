@@ -48,185 +48,185 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 </head>
 <body>
-	<i class="fa fa-chevron-up fa-2x"></i>
-	<div class="home">
-		<div class="image">
-			<img src="https://pbs.twimg.com/profile_images/629128564189720576/FTWHWF_k.jpg" alt="">
-			<!-- <img src="./img/jun.jpeg" alt="">
--->			</div>
-		<p>Kono Junya</p>
-		<p>Programmer</p>
-		<p>18 years old</p>
-	</div>
-	<div class="history">
-		<h2>History</h2>
-		<div class="history-contents">
-			<ul>
-				<!-- 生まれる -->
-				<br>
-				<li>
-					1997年 3月 3日 明石にておぎゃーって言っちゃう系男子
+	<div class="wrapper">
+		<i class="fa fa-chevron-up fa-2x"></i>
+		<div class="home">
+			<div class="image">
+				<img src="https://pbs.twimg.com/profile_images/629128564189720576/FTWHWF_k.jpg" alt="">
+				<!-- <img src="./img/jun.jpeg" alt="">
+	-->			</div>
+			<p>Kono Junya</p>
+			<p>Programmer</p>
+			<p>18 years old</p>
+		</div>
+		<div class="history">
+			<h2>History</h2>
+			<div class="history-contents">
+				<ul>
+					<!-- 生まれる -->
 					<br>
-					生まれた時は1500gしかなかった為、なんか箱にぶち込まれる
-				</li>
-			</ul>
-			<ul>
-				<!-- 小学校 -->
-				<li>
-					2003年 4月 東舞子小学校に入学ぅぅぅう
-					<br>
-					小学生で合わせて12針縫うことになる。
-				</li>
-				<li>
-					読者モデル的なことをしていた時代。
-					<br>
-					2009年に<a href="http://girlsfes.narumiya-online.jp/boys/" target="_blank">「ブルークロス スーパーボーイズオーディション」</a>にて西日本代表を勝ち取る
-				</li>
-				<li>
-					タップダンスを始める。最初は筋肉痛に悩まされた。
-				</li>
-				<li>
-					水泳と珠算もはじめる、日能研にいって勉強も頑張る()
-				</li>
-			</ul>
-			<ul>
-				<!-- 中学校 -->
-				<li>
-					2009年 4月 歌敷山中学校に入学
-					<br>
-					一応、友達も多かったためサッカー部にはいる。サッカーたのちい
-				</li>
-				<li>
-					Amebloをしていて、プラグインのすごさに気づきHTML,CSS,Javascriptの存在を知る
-					<br>
-					Ameblo書きまくる
-				</li>
-				<li>
-					珠算が嫌いすぎて辞める。部活的な問題で水泳も辞める。
-				</li>
-			</ul>
-			<ul>
-				<!-- 高校 -->
-				<li>
-					2012年 4月 県立伊川谷高等学校に入学しちゃう
-				</li>
-				<li>
-					高2年の頃、iPhoneのアプリ開発のため「Objective-C」をちょっぴり勉強する
-				</li>
-				<li>
-					理系に進級し、いまではそれでよかったと思っている。高校の頃、もっとプログラミングの勉強をしていたらよかった。
-				</li>
-				<li>
-					ダンス部副部長に就任するも、部活に行かず顧問から退部届け渡される。
-				</li>
-				<li>
-					<a href="http://www.junkudo.co.jp/" target="_blank">ジュンク堂書店</a> 店員のアルバイトをし始める。
-				</li>
-			</ul>
-			<ul>
-				<!-- 専門学校 -->
-				<li>
-					2015年 4月 HAL大阪に入学する
-				</li>
-				<li>
-					様々な人に出会い、プログラミング頑張っちゃうぞ(^^)ってなる
-				</li>
-				<li>
-					<a href="http://techlogics.link/" traget="_blank">Techlogics</a>に参加して様々なプログラマと出会う。代表のいっちマンに憧れる。
-				</li>
-				<li>
-					<a href="http://techkidscamp.jp/" target="_blank">株式会社CA TechKids</a>のメンターとして小学生にプログラミングを教える。
-				</li>
-				<li>
-					様々な会社のCEOやCOO、CTOの方と知り合いになれたり<a href="https://life-is-tech.com/">Life is Tech</a>の生徒の子たちとも友達になったりとにかくすっげぇ楽しい。
-				</li>
-			</ul>
-			<ul>
-				<li>
-					そして、、、<span id="clock" style="color:#009A5A;"></span>の今！！！君は俺のホームページを見てる！！！！！ありがとう！！！！
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="like">
-		<h2>Like</h2>
-		<div class="like-contents">
-			<h3>Food</h3>
-			<p>
-				肉！！！いちご！！！！和菓子！！！
-			</p>
-			<h3>Person</h3>
-			<p>
-				スティーブ・ジョブズ<br>
-				マイケル・ジャクソン<br>
-				Team Lab 猪子寿之<br>
-			</p>
-			<h3>Subject</h3>
-			<p>
-				ありません！！！！
-			</p>
-			<h3>How about you ?</h3>
-			<input type="text" ng-model="yourName" placeholder="Your Answer"><br><br>
-	      <strong>I like {{yourName}}.</strong>
-		</div>	
-	</div>
-	<div class="skill">
-		<h2>Skill</h2>
-		<p>Programming</p>
-		<div class="graph">
-			<span class="bar" style="width: 45%;">45%</span>
-		</div>
-		<p>Twitter</p>
-		<div class="graph">
-			<span class="bar" style="width: 90%;">90%</span>
-		</div>
-		<p>Dance</p>
-		<div class="graph">
-			<span class="bar" style="width: 70%;">70%</span>
-		</div>
-		<p>Tension</p>
-		<div class="graph">
-			<span class="bar" style="width: 120%;">120%</span>
-		</div>
-	</div>
-	<div class="contact">
-		<h2>Contact</h2>
-		<div class="sns">
-			<a href="http://twitter.com/konojunya" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
-			<a href="https://www.facebook.com/profile.php?id=100007518556907" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
-			<a href="https://plus.google.com/u/0/105417723146736076728/posts" target="_blank"><i class="fa fa-google-plus fa-4x"></i></a>
-		</div>
-	</div>
-	<div class="feed">
-		<div class="ameblo">
-			<p class="ameblo-head">Ameblo</p>
-			<div class="ameblo-contents">
-				<ul id="feed"></ul>
+					<li>
+						1997年 3月 3日 明石にておぎゃーって言っちゃう系男子
+						<br>
+						生まれた時は1500gしかなかった為、なんか箱にぶち込まれる
+					</li>
+				</ul>
+				<ul>
+					<!-- 小学校 -->
+					<li>
+						2003年 4月 東舞子小学校に入学ぅぅぅう
+						<br>
+						小学生で合わせて12針縫うことになる。
+					</li>
+					<li>
+						読者モデル的なことをしていた時代。
+						<br>
+						2009年に<a href="http://girlsfes.narumiya-online.jp/boys/" target="_blank">「ブルークロス スーパーボーイズオーディション」</a>にて西日本代表を勝ち取る
+					</li>
+					<li>
+						タップダンスを始める。最初は筋肉痛に悩まされた。
+					</li>
+					<li>
+						水泳と珠算もはじめる、日能研にいって勉強も頑張る()
+					</li>
+				</ul>
+				<ul>
+					<!-- 中学校 -->
+					<li>
+						2009年 4月 歌敷山中学校に入学
+						<br>
+						一応、友達も多かったためサッカー部にはいる。サッカーたのちい
+					</li>
+					<li>
+						Amebloをしていて、プラグインのすごさに気づきHTML,CSS,Javascriptの存在を知る
+						<br>
+						Ameblo書きまくる
+					</li>
+					<li>
+						珠算が嫌いすぎて辞める。部活的な問題で水泳も辞める。
+					</li>
+				</ul>
+				<ul>
+					<!-- 高校 -->
+					<li>
+						2012年 4月 県立伊川谷高等学校に入学しちゃう
+					</li>
+					<li>
+						高2年の頃、iPhoneのアプリ開発のため「Objective-C」をちょっぴり勉強する
+					</li>
+					<li>
+						理系に進級し、いまではそれでよかったと思っている。高校の頃、もっとプログラミングの勉強をしていたらよかった。
+					</li>
+					<li>
+						ダンス部副部長に就任するも、部活に行かず顧問から退部届け渡される。
+					</li>
+					<li>
+						<a href="http://www.junkudo.co.jp/" target="_blank">ジュンク堂書店</a> 店員のアルバイトをし始める。
+					</li>
+				</ul>
+				<ul>
+					<!-- 専門学校 -->
+					<li>
+						2015年 4月 HAL大阪に入学する
+					</li>
+					<li>
+						様々な人に出会い、プログラミング頑張っちゃうぞ(^^)ってなる
+					</li>
+					<li>
+						<a href="http://techlogics.link/" traget="_blank">Techlogics</a>に参加して様々なプログラマと出会う。代表のいっちマンに憧れる。
+					</li>
+					<li>
+						<a href="http://techkidscamp.jp/" target="_blank">株式会社CA TechKids</a>のメンターとして小学生にプログラミングを教える。
+					</li>
+					<li>
+						様々な会社のCEOやCOO、CTOの方と知り合いになれたり<a href="https://life-is-tech.com/">Life is Tech</a>の生徒の子たちとも友達になったりとにかくすっげぇ楽しい。
+					</li>
+				</ul>
+				<ul>
+					<li>
+						そして、、、<span id="clock" style="color:#009A5A;"></span>の今！！！君は俺のホームページを見てる！！！！！ありがとう！！！！
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="twitter">
-			<p class="twitter-head">Twitter</p>
-			<div class="twitter-contents">
-				<a class="twitter-timeline" href="https://twitter.com/konojunya" data-widget-id="623906180763521024">@konojunyaさんのツイート</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				</script>
+		<div class="like">
+			<h2>Like</h2>
+			<div class="like-contents">
+				<h3>Food</h3>
+				<p>
+					肉！！！いちご！！！！和菓子！！！
+				</p>
+				<h3>Person</h3>
+				<p>
+					スティーブ・ジョブズ<br>
+					マイケル・ジャクソン<br>
+					Team Lab 猪子寿之<br>
+				</p>
+				<h3>Subject</h3>
+				<p>
+					ありません！！！！
+				</p>
+				<h3>How about you ?</h3>
+				<input type="text" ng-model="yourName" placeholder="Your Answer"><br><br>
+		      <strong>I like {{yourName}}.</strong>
+			</div>	
+		</div>
+		<div class="skill">
+			<h2>Skill</h2>
+			<p>Programming</p>
+			<div class="graph">
+				<span class="bar" style="width: 45%;">45%</span>
+			</div>
+			<p>Twitter</p>
+			<div class="graph">
+				<span class="bar" style="width: 90%;">90%</span>
+			</div>
+			<p>Dance</p>
+			<div class="graph">
+				<span class="bar" style="width: 70%;">70%</span>
+			</div>
+			<p>Tension</p>
+			<div class="graph">
+				<span class="bar" style="width: 120%;">120%</span>
 			</div>
 		</div>
+		<div class="contact">
+			<h2>Contact</h2>
+			<div class="sns">
+				<a href="http://twitter.com/konojunya" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=100007518556907" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
+				<a href="https://plus.google.com/u/0/105417723146736076728/posts" target="_blank"><i class="fa fa-google-plus fa-4x"></i></a>
+			</div>
+		</div>
+		<div class="feed">
+			<div class="ameblo">
+				<p class="ameblo-head">Ameblo</p>
+				<div class="ameblo-contents">
+					<ul id="feed"></ul>
+				</div>
+			</div>
+			<div class="twitter">
+				<p class="twitter-head">Twitter</p>
+				<div class="twitter-contents">
+					<a class="twitter-timeline" href="https://twitter.com/konojunya" data-widget-id="623906180763521024">@konojunyaさんのツイート</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<small>Copyright 2015 JunyaKono.</small>
+		</div>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-66290615-1', 'auto');
+			  ga('send', 'pageview');
+			</script>
 	</div>
-	<div id="footer">
-		<small>Copyright 2015 JunyaKono.</small>
-	</div>
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-66290615-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
 <script src="./js/script.min.js"></script>
 </body>
 </html>
