@@ -1,9 +1,12 @@
-@charset "utf-8";@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);@import url(http://fonts.googleapis.com/css?family=Bad+Script);@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);@import url(http://fonts.googleapis.com/css?family=Fjalla+One);@import url(http://fonts.googleapis.com/css?family=Poiret+One);@import url(http://fonts.googleapis.com/css?family=Chewy);body,html{width:100%;height:100%}
+@charset "utf-8";@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);@import url(http://fonts.googleapis.com/css?family=Bad+Script);@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);@import url(http://fonts.googleapis.com/css?family=Fjalla+One);@import url(http://fonts.googleapis.com/css?family=Poiret+One);@import url(http://fonts.googleapis.com/css?family=Chewy);@import url(http://fonts.googleapis.com/css?family=Poiret+One);body,html{width:100%;height:100%;-webkit-overflow-scrolling:touch}
 *{margin:0;padding:0;box-sizing:border-box}h2{color:black;text-align:center;font-size:3rem;padding:3% 0;font-family:'Fjalla One',sans-serif}
-.wrapper{width:100%;height:100%}.wrapper>i{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:black;cursor:pointer;z-index:1000}
-.home{width:100%;height:100%;padding:5% 0;text-align:center;background-color:#e87771}.home img{margin-bottom:2%;width:25%}.home img+p{font-family:'Bad Script',cursive;font-size:40px}
-.home p{line-height:40px;font-size:25px;font-family:'Reenie Beanie',cursive}.history{width:100%;height:100%;background-color:#5e9e84}
-.history_contents,.like_contents,.archive_contents{width:80%;height:70%;overflow-y:scroll;margin:0 auto;background-color:rgba(255,255,255,0.65);-webkit-overflow-scrolling:touch}
+.wrapper{width:100%;height:100%}.fa-bars{position:fixed;top:30px;right:50px;width:5rem;height:5rem;text-align:center;cursor:pointer;z-index:1000}.fa-chevron-up{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:black;cursor:pointer;z-index:1000}
+.navicard{position:fixed;top:-200%;right:-200%;width:100%;height:100%;background-color:rgba(255,255,255,0.8);z-index:900}.navicard_ani{top:0;right:0;-webkit-animation-name:animation;-o-animation-name:animation;animation-name:animation;-webkit-animation:animation .7s;-o-animation:animation .7s;animation:animation .7s}
+@-webkit-keyframes animation{0%{top:-200%;right:-200%}100%{top:0;right:0}}@-o-keyframes animation{0%{top:-200%;right:-200%}100%{top:0;right:0}}@-moz-keyframes animation{0%{top:-200%;right:-200%}
+100%{top:0;right:0}}@keyframes animation{0%{top:-200%;right:-200%}100%{top:0;right:0}}.navicard ul{list-style:none}.navicard li{width:100%;height:4.5rem;line-height:4.5rem;text-align:center;font-family:'Poiret One',cursive;font-size:2rem;z-index:1000}
+.navicard li:hover{color:white;background-color:rgba(0,0,0,0.8)}.home{width:100%;height:100%;padding:5% 0;text-align:center;background-color:#e87771}.home img{margin-bottom:2%;width:25%}
+.home img+p{font-family:'Bad Script',cursive;font-size:40px}.home p{line-height:40px;font-size:25px;font-family:'Reenie Beanie',cursive}
+.history{width:100%;height:100%;background-color:#5e9e84}.history_contents,.like_contents,.archive_contents{width:80%;height:70%;overflow-y:scroll;margin:0 auto;background-color:rgba(255,255,255,0.65);-webkit-overflow-scrolling:touch}
 .history_contents ul{list-style:circle;padding-left:5%}.history_contents li{line-height:2rem;margin:3% 0}.like{width:100%;height:100%;background-color:#5f8692;text-align:center}
 .like_contents h3{font-size:3.5rem;padding:2% 0;font-family:'Poiret One',cursive}.like_contents p{text-decoration:underline;padding:3% 0;font-size:1rem;font-weight:bold}
 .like_contents input{padding-left:2%;font-size:20px;display:inline-block;width:25%;height:13%;border:5px double black;background-color:rgba(255,255,255,0.8)}
@@ -11,6 +14,10 @@
 .skill .bar{display:block;position:relative;background-color:#28242d;text-align:center;color:white;height:2em;line-height:2em}.archive{width:100%;height:100%;background-color:#3e894b}
 .archive_contents li{background-color:rgba(75,143,136,0.3);padding:2% 0;text-align:center}.portfolio{width:100%;height:100%;background-color:#55c8a8}.community{width:100%;height:100%;background-color:#72c881}
 .community_contents{margin:0 auto;width:30%;height:30%;overflow:hidden;background-color:white}.community_contents img{width:100%}.community_card{width:100%;height:100%;position:relative;top:-300%;left:0;z-index:2;background-color:rgba(0,0,0,0.9);color:white}
-.community_card a{color:blue}.community_contents p{padding:5%;line-height:3rem}.contact{width:100%;height:100%;background-color:#a5cf48}.sns{width:80%;height:70%;margin:0 auto;text-align:center}
-.sns a{color:black;text-decoration:none}.sns i{padding:10% 5%}.fa-twitter:hover{color:#377bd3!important}.fa-facebook:hover{color:#314887!important}.fa-google-plus:hover{color:#bb4836!important}
-.footer{width:100%;height:auto;letter-spacing:.3rem;text-align:center;font-family:'PT Sans Narrow',sans-serif;background-color:black;color:white;padding:1% 0}
+.community_card a{color:blue}.community_contents p{padding:5%;line-height:2rem}.contact{width:100%;height:100%;background-color:#a5cf48}.sns{width:80%;height:70%;margin:0 auto;text-align:center}
+.sns a{color:black;text-decoration:none;z-index:-1}.sns i{padding:10% 5%;z-index:-1}.fa-twitter:hover{color:#377bd3!important}.fa-facebook:hover{color:#314887!important}
+.fa-google-plus:hover{color:#bb4836!important}.footer{width:100%;height:auto;letter-spacing:.3rem;text-align:center;font-family:'PT Sans Narrow',sans-serif;background-color:black;color:white;padding:1% 0}
+@media only screen and (max-width:414px){h2{padding:8% 0}.fa-bars{top:20px;right:20px}.fa-chevron-up{right:20px;bottom:10px}.home{padding:10% 0}.home img{margin-bottom:10%;width:70%}
+.home img+p{font-size:40px}.home p{line-height:50px;font-size:30px}.history_contents li{font-size:10px}.like_contents h3{font-size:2rem;padding:3% 0}.like_contents p{font-size:.8rem}
+.like_contents input{padding-left:4%;width:60%}.skill .graph{width:230px}.archive_contents li{padding:4% 0}.community_contents{width:50%;height:17%}.community_card{top:-300%}
+.community_contents p{padding:1%;font-size:5px}.sns i{padding:15% 3.5%;font-size:2.3rem}}

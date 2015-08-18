@@ -1,21 +1,118 @@
 //main js
 $(function(){
-	$('.wrapper > i').click(function(){
-		$("body").animate({scrollTop:0},1000);
-	});
-   $('.community_contents').hover(
-      function(){
-         $('.community_card').animate({
-            top: "-120%",
-         },350);
-      },
-      function(){
-         $('.community_card').animate({
-            top: "-300%"
-         },350);
-      });
-});
+   //topへ
+   $('.fa-chevron-up').click(function(){
+      $("body").animate({scrollTop:0},1000);
+      $('.navicard').removeClass('navicard_ani');
+   });
 
+   //navicard js
+   $('.fa-bars').click(
+   function(){
+      $('.navicard').toggleClass('navicard_ani');
+   });
+
+   //topへ
+   var home_position = $('.home').offset().top;
+   $('.navi_home').click(function(){
+       $("html,body").animate({
+           scrollTop : home_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //historyへ
+   var history_position = $('.history').offset().top;
+   $('.navi_history').click(function(){
+       $("html,body").animate({
+           scrollTop : history_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //likeへ
+   var like_position = $('.like').offset().top;
+   $('.navi_like').click(function(){
+       $("html,body").animate({
+           scrollTop : like_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //skillへ
+   var skill_position = $('.skill').offset().top;
+   $('.navi_skill').click(function(){
+       $("html,body").animate({
+           scrollTop : skill_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //archiveへ
+   var archive_position = $('.archive').offset().top;
+   $('.navi_archive').click(function(){
+       $("html,body").animate({
+           scrollTop : archive_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //portfolioへ
+   var portfolio_position = $('.portfolio').offset().top;
+   $('.navi_portfolio').click(function(){
+       $("html,body").animate({
+           scrollTop : portfolio_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //communityへ
+   var community_position = $('.community').offset().top;
+   $('.navi_community').click(function(){
+       $("html,body").animate({
+           scrollTop : community_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //contactへ
+   var contact_position = $('.contact').offset().top;
+   $('.navi_contact').click(function(){
+       $("html,body").animate({
+           scrollTop : contact_position
+       }, {
+           queue : false
+       });
+       $('.navicard').removeClass('navicard_ani');
+   });
+
+   //community
+   $('.community_contents').hover(
+   function(){
+      $('.community_card').animate({
+         top: "-120%"
+      },300);
+   },
+   function(){
+      $('.community_card').animate({
+         top: "-300%"
+      },300);
+   });
+});
 //time js
 function set2fig(num) {
    var ret;
