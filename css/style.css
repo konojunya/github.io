@@ -357,14 +357,14 @@ h2{
 	}
 	.community_contents{
 		width: 50%;
-		height: 17%;
+		height: 15%;
 	}
 	.community_card{
 		top: -300%;
 	}
 	.community_contents p{
 		padding: 1%;
-		font-size: 5px;
+		font-size: 10px;
 	}
 	.sns i{
 		padding: 15% 3.5%;
