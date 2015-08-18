@@ -351,7 +351,12 @@ h2{
 		width: 60%;
 	}
 	.skill .graph{
+	    margin: 10px auto;
 	    width: 230px;
+	}
+	.skill .bar{
+	    height: 1.5em;
+	    line-height: 1.5em;
 	}
 	.archive_contents li{
 		padding: 4% 0;
