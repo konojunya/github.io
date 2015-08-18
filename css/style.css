@@ -363,14 +363,14 @@ h2{
 	}
 	.community_contents{
 		width: 50%;
-		height: 15%;
+		height: 20%;
 	}
 	.community_card{
 		top: -300%;
 	}
 	.community_contents p{
-		padding: .5%;
-		font-size: 8px;
+		padding: 0.3%;
+		font-size: 7px;
 	}
 	.sns i{
 		padding: 15% 3.5%;
