@@ -6,18 +6,28 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Chewy);
 
-body,
-html{
+
+body,html{
 	width: 100%;
 	height: 100%;
-	-webkit-overflow-scrolling: touch;
-	background-color: #f3f3f3;
 }
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
-body > i{
+h2{
+	color: black;
+	text-align: center;
+	font-size: 3rem;
+	padding: 3% 0;
+	font-family: 'Fjalla One', sans-serif;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+.wrapper > i{
 	position: fixed;
 	right: 50px;
 	bottom: 30px;
@@ -28,118 +38,82 @@ body > i{
 	cursor: pointer;
 	z-index: 1000;
 }
-/*
-
-home
-
-*/
 .home{
 	width: 100%;
 	height: 100%;
+	padding: 5% 0;
 	text-align: center;
+	background-color: rgb(232,119,113);
 }
-.home .image{
-	padding: 5% 0 2%;
+.home img{
+	margin-bottom: 2%;
+	width: 25%;
 }
-.home .image img{
-	width: 20%;
-	border-radius: 50%;
-}
-.home p{
-	font-size: 2rem;
-	color: black;
-}
-.home .image + p{
+.home img + p{
 	font-family: 'Bad Script', cursive;
 	font-size: 40px;
 }
-.home .image + p + p{
-	line-height: 30px;
+.home p{
+	line-height: 40px;
 	font-size: 25px;
 	font-family: 'Reenie Beanie', cursive;
 }
-.home .image + p + p + p{
-	line-height: 30px;
-	font-size: 25px;
-	font-family: 'Reenie Beanie', cursive;
-}
-/*
-
-history
-
-*/
 .history{
 	width: 100%;
-	height: 200%;
-}
-h2{
-	color: black;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	text-align: center;
-	line-height: 5rem;
-	font-size: 3rem;
-	font-family: 'Fjalla One', sans-serif;
-}
-.history .history-contents{
-	margin: 0 auto;
-	width: 80%;
-	height: 80%;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
-	background-color: white;
-}
-.history .history-contents ul{
-	list-style: circle;
-	padding-left: 10%;
-	padding-top: 3%;
-	margin-top: 10%;
-}
-.history .history-contents ul li{
-	line-height: 2rem;
-}
-/*
-
-like
-
-*/
-.like{
-	width: 100%;
-	height: 120%;
-}
-.like .like-contents{
-	width: 90%;
 	height: 100%;
+	background-color: rgb(94,158,132);
+}
+.history_contents,
+.like_contents,
+.archive_contents{
+	width: 80%;
+	height: 70%;
+	overflow-y: scroll;
 	margin: 0 auto;
-	background-color: #fff;
-	text-align: center;
+	background-color: rgba(255,255,255,0.65);
+	-webkit-overflow-scrolling: touch;
 }
-.like .like-contents h3{
-	font-size: 1.5rem;
-	padding: 3% 0;
-	font-family: 'Poiret One', cursive;
-}
-.like .like-contents p{
+.history_contents ul{
+	list-style: circle;
 	padding-left: 5%;
 }
-.like .like-contents h5{
+.history_contents li{
+	line-height: 2rem;
+	margin: 3% 0;
+}
+.like{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(95,134,146);
+	text-align: center;
+}
+.like_contents h3{
+	font-size: 3.5rem;
 	padding: 2% 0;
+	font-family: 'Poiret One', cursive;
 }
-.like .like-contents strong{
-	font-size: 2rem;
+.like_contents p{
+	text-decoration: underline;
 	padding: 3% 0;
+	font-size: 1rem;
+	font-weight: bold;
 }
-/*
-
-skill
-
-*/
+.like_contents input{
+	padding-left: 2%;
+	font-size: 20px;
+	display: inline-block;
+	width: 25%;
+	height: 13%;
+	border: 5px double black;
+	background-color: rgba(255,255,255,0.8);
+}
 .skill{
 	width: 100%;
 	height: 100%;
+	background-color: rgb(246,201,71);
 }
-.skill h2{
-	margin-top: 20%;
+.skill p{
+	text-align: center;
 }
 .skill .graph{
 	background-color: white;
@@ -152,38 +126,76 @@ skill
 .skill .bar{
 	display: block;
     position: relative;
-    background-color: #68A0FF;
+    background-color: rgb(40,36,45);
     text-align: center;
-    color: black;
+    color: white;
     height: 2em;
     line-height: 2em;
 }
-.skill p{
-	color: black;
+.archive{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(62,137,75);
+}
+.archive_contents li{
+	background-color: rgba(75,143,136,0.3);
+	padding: 2% 0;
 	text-align: center;
 }
-/*
-
-contact
-
-*/
+.portfolio{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(85,200,168);
+}
+.community{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(114,200,129);
+}
+.community_contents{
+	margin: 0 auto;
+	width: 30%;
+	height: 30%;
+	overflow: hidden;
+	background-color: white;
+}
+.community_contents img{
+	width: 100%;
+}
+.community_card{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: -300%;
+	left: 0;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+}
+.community_card a{
+	color: blue;
+}
+.community_contents p{
+	padding: 5%;
+	line-height: 3rem;
+}
 .contact{
 	width: 100%;
 	height: 100%;
-	text-decoration: none;
+	background-color: rgb(165,207,72);
 }
-.contact .sns{
+.sns{
 	width: 80%;
-	height: 50%;
+	height: 70%;
 	margin: 0 auto;
 	text-align: center;
 }
-.contact .sns a{
+.sns a{
+	color: black;
 	text-decoration: none;
 }
-.contact .sns i{
-	color: black;
-	margin: 15% 10%;
+.sns i{
+	padding: 10% 5%;
 }
 .fa-twitter:hover{
 	color: rgb(55,123,211)!important;
@@ -194,179 +206,13 @@ contact
 .fa-google-plus:hover{
 	color: rgb(187,72,54)!important;
 }
-/*
-
-feed
-
-*/
-.feed{
+.footer{
 	width: 100%;
-	height: 60%;
-}
-.feed li{
-	display: block;
-	width: 90%;
-	padding: 1%;
-	margin: 0 auto 1%;
-	background-color: rgba(0, 241, 46, 0.59);
-}
-.feed .ameblo{
-	float: left;
-	width: 45%;
-	height: 100%;
-}
-.feed .ameblo-contents{
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-.feed .twitter{
-	float: right;
-	width: 45%;
-	height: 100%;
-}
-.feed .twitter-contents{
-	margin: 0 auto;
-	height: 100%;
-	overflow: scroll;
-}
-.ameblo-head{
-	text-align: center;
-	color: green;
-	font-family: 'Chewy', cursive;
-}
-.twitter-head{
-	text-align: center;
-	color: skyblue;
-	font-family: 'Chewy', cursive;
-}
-/*
-
-footer
-
-*/
-#footer{
-	width: 100%;
-	height: 7%;
-	color: black;
-	letter-spacing: .4rem;
+	height: auto;
+	letter-spacing: 0.3rem;
 	text-align: center;
 	font-family: 'PT Sans Narrow', sans-serif;
-	padding-top: 7%;
-}
-/*
-
-タブレット レスポンシブ
-
-*/
-@media only screen and (max-width: 768px) and (min-width: 414px){
-	
-}
-/*
-
-スマホ レスポンシブ
-
-*/
-@media only screen and (max-width: 414px){
-	body > i{
-		position: fixed;
-		right: 10px;
-		bottom: 5px;
-		z-index: 1000;
-	}
-	/*
-
-	home
-
-	*/
-	.home .image{
-		padding: 30% 0 2%;
-	}
-	.home .image img{
-		width: 45%;
-		border-radius: 50%;
-	}
-	/*
-
-	history
-
-	*/
-	.history .history-contents{
-		margin: 0 auto;
-		width: 80%;
-		height: 90%;
-		overflow: scroll;
-	}
-	.history .history-contents ul{
-		list-style: circle;
-		padding-left: 10%;
-		padding-top: 3%;
-
-	}
-	.history .history-contents ul li{
-		line-height: 1.5rem;
-		font-size: 7px;
-	}
-	/*
-
-	like
-
-	*/
-	.like .like-contents h3{
-		font-size: 2rem;
-		padding: 5% 0;
-	}
-	.like input{
-		font-size: 16px;
-	}
-	/*
-
-	skill
-
-	*/
-	.skill{
-		height: 120%;
-	}
-	.skill h2{
-		margin-top: 30%;
-	}
-	.skill .graph{
-		position: relative;
-	    margin: 20px auto;
-	    width: 200px;
-	    border: 1px solid #fff;
-	    padding: 2px;
-	}
-	/*
-
-	contact
-
-	*/
-	.contact{
-		height: 120%;
-	}
-	.contact .sns i{
-		display: block;
-		margin: 25% auto;
-		font-size: 60px;
-	}
-	/*
-
-	feed
-
-	*/
-	.feed .twitter{
-		display: none;
-	}
-	.feed .ameblo{
-		width: 100%;
-		height: 100%;
-	}
-	.feed li{
-		display: block;
-		width: 100%;
-		padding: 1%;
-		margin: 0 auto 1%;
-		font-size: 10px;
-	}
+	background-color: black;
+	color: white;
+	padding: 1% 0;
 }
