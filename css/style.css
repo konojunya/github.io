@@ -363,10 +363,10 @@ h2{
 	}
 	.community_contents{
 		width: 50%;
-		height: 25%;
+		height: auto;
 	}
 	.community_card{
-		top: 300%;
+		top: 0;
 	}
 	.community_contents p{
 		padding: 0.3%;
