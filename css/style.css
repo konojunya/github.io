@@ -262,7 +262,7 @@ homepage
 	overflow: hidden;
 	background-image: url(http://techlogics.link/images/icon.png);
 	background-size: 100%;
-	background-position: top center;
+	background-repeat: no-repeat; 
 }
 .community_card{
 	width: 100%;
@@ -382,7 +382,6 @@ homepage
 	}
 	.community_contents{
 		width: 70%;
-		height: 30%;
 	}
 	.sns i{
 		padding: 10% 30%;
