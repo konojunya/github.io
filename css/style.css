@@ -376,12 +376,12 @@ homepage
 		padding: 4% 0;
 	}
 	.community_card p{
-		padding: 0;
+		padding: 0 5%;
 		font-size: 10px;
 	}
 	.community_contents{
 		width: 70%;
-		height: 40%;
+		height: 30%;
 	}
 	.sns i{
 		padding: 10% 30%;
