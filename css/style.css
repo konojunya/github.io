@@ -387,6 +387,7 @@ homepage
 	}
 	.community_card{
 		top: -70%;
+		height: auto;
 	}
 	.sns i{
 		padding: 10% 30%;
