@@ -257,11 +257,11 @@ homepage
 }
 .community_contents{
 	margin: 0 auto;
-	width: 50%;
-	height: 50%;
+	width: 40%;
+	height: 40%;
 	overflow: hidden;
 	background-image: url(http://techlogics.link/images/icon.png);
-	background-size: cover;
+	background-size: 100%;
 	background-position: top center;
 }
 .community_card{
