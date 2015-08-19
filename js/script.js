@@ -1,5 +1,8 @@
 //main js
 $(function(){
+  //top animation
+
+
    //topへ
    $('.fa-chevron-up').click(function(){
       $("body").animate({scrollTop:0},1000);
@@ -104,13 +107,17 @@ $(function(){
    $('.community_contents').hover(
    function(){
       $('.community_card').animate({
-         top: "-120%"
-      },300);
+         opacity: "1"
+      },200,function(){
+        $(this).css('z-index','0')
+      });
    },
    function(){
       $('.community_card').animate({
-         top: "-300%"
-      },300);
+         opacity: "0"
+      },200,function(){
+        $(this).css('z-index','-100')
+      });
    });
 });
 //time js

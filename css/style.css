@@ -24,6 +24,22 @@ h2{
 	padding: 3% 0;
 	font-family: 'Fjalla One', sans-serif;
 }
+/*
+
+animation
+
+*/
+.top{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+}
+/*
+
+homepage
+
+*/
 .wrapper{
 	width: 100%;
 	height: 100%;
@@ -244,7 +260,6 @@ h2{
 	width: 30%;
 	height: 30%;
 	overflow: hidden;
-	background-color: white;
 }
 .community_contents img{
 	width: 100%;
@@ -253,11 +268,13 @@ h2{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	top: -300%;
+	top: -100%;
 	left: 0;
 	z-index: 2;
 	background-color: rgba(0,0,0,0.9);
 	color: white;
+	opacity: 0;
+	z-index: -100;
 }
 .community_card a{
 	color: skyblue;
@@ -362,18 +379,17 @@ h2{
 		padding: 4% 0;
 	}
 	.community_contents{
-		width: 50%;
-		height: auto;
-	}
-	.community_card{
-		top: 0;
+		width: 60%;
 	}
 	.community_contents p{
-		padding: 0.3%;
-		font-size: 7px;
+		padding: 5%;
+		font-size: 15px;
+	}
+	.community_card{
+		top: -70%;
 	}
 	.sns i{
-		padding: 15% 3.5%;
-		font-size: 2.3rem;
+		padding: 10% 30%;
+		font-size: 4rem;
 	}
 }
