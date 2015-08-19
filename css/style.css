@@ -257,8 +257,8 @@ homepage
 }
 .community_contents{
 	margin: 0 auto;
-	width: 40%;
-	height: 40%;
+	width: 50%;
+	height: 50%;
 	overflow: hidden;
 	background-image: url(http://techlogics.link/images/icon.png);
 	background-size: 100%;
@@ -376,8 +376,8 @@ homepage
 		padding: 4% 0;
 	}
 	.community_contents p{
-		padding: 5%;
-		font-size: 15px;
+		padding: 3%;
+		font-size: 10px;
 	}
 	.community_contents{
 		width: 70%;
