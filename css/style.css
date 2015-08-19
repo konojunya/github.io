@@ -375,12 +375,13 @@ homepage
 	.archive_contents li{
 		padding: 4% 0;
 	}
-	.community_contents p{
-		padding: 3%;
+	.community_card p{
+		padding: 0;
 		font-size: 10px;
 	}
 	.community_contents{
 		width: 70%;
+		height: 40%;
 	}
 	.sns i{
 		padding: 10% 30%;
