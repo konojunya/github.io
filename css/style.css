@@ -276,7 +276,7 @@ homepage
 .community_card a{
 	color: skyblue;
 }
-.community_contents p{
+.community_card p{
 	padding: 5%;
 	line-height: 3rem;
 }
@@ -378,6 +378,7 @@ homepage
 	.community_card p{
 		padding: 0 5%;
 		font-size: 10px;
+		line-height: 1.2rem;
 	}
 	.community_contents{
 		width: 70%;
