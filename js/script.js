@@ -107,17 +107,13 @@ $(function(){
    $('.community_contents').hover(
    function(){
       $('.community_card').animate({
-         opacity: "1"
-      },200,function(){
-        $(this).css('z-index','0')
-      });
+         top: "0"
+      },300);
    },
    function(){
       $('.community_card').animate({
-         opacity: "0"
-      },200,function(){
-        $(this).css('z-index','-100')
-      });
+         top: "-200%"
+      },300);
    });
 });
 //time js

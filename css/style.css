@@ -257,31 +257,28 @@ homepage
 }
 .community_contents{
 	margin: 0 auto;
-	width: 30%;
-	height: 30%;
+	width: 50%;
+	height: 50%;
 	overflow: hidden;
-}
-.community_contents img{
-	width: 100%;
+	background-image: url(http://techlogics.link/images/icon.png);
+	background-size: cover;
+	background-position: top center;
 }
 .community_card{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	top: -100%;
+	top: -200%;
 	left: 0;
-	z-index: 2;
 	background-color: rgba(0,0,0,0.9);
 	color: white;
-	opacity: 0;
-	z-index: -100;
 }
 .community_card a{
 	color: skyblue;
 }
 .community_contents p{
 	padding: 5%;
-	line-height: 2rem;
+	line-height: 3rem;
 }
 .contact{
 	width: 100%;
@@ -378,16 +375,12 @@ homepage
 	.archive_contents li{
 		padding: 4% 0;
 	}
-	.community_contents{
-		width: 60%;
-	}
 	.community_contents p{
 		padding: 5%;
 		font-size: 15px;
 	}
-	.community_card{
-		top: -70%;
-		height: auto;
+	.community_contents{
+		width: 70%;
 	}
 	.sns i{
 		padding: 10% 30%;
