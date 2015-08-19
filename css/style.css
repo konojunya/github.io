@@ -378,10 +378,11 @@ homepage
 	.community_card p{
 		padding: 0 5%;
 		font-size: 10px;
-		line-height: 1.2rem;
+		line-height: 2.5rem;
 	}
 	.community_contents{
 		width: 70%;
+		height: 20%;
 	}
 	.sns i{
 		padding: 10% 30%;
