@@ -1,21 +1,34 @@
 //main js
 $(function(){
-  //top animation
-
-
    //topへ
    $('.fa-chevron-up').click(function(){
       $("body").animate({scrollTop:0},1000);
-      $('.navicard').removeClass('navicard_ani');
+      $('.sec').show();
+        $('.navicard').animate({
+        right: "-200%"
+      },650);
    });
 
    //navicard js
-   $('.fa-bars').click(
+   $('.sec').click(
    function(){
-      $('.navicard').toggleClass('navicard_ani');
+      $('.first').show();
+      $(this).hide();
+      $('.navicard').css('opacity',"1");
+      $('.navicard').animate({
+        right: "0"
+      },650);
    });
+    $('.first').click(
+      function(){
+        $('.sec').show();
+        $(this).hide();
+        $('.navicard').animate({
+        right: "-200%"
+      },650);
+      });
 
-   //topへ
+   //homeへ
    var home_position = $('.home').offset().top;
    $('.navi_home').click(function(){
        $("html,body").animate({
@@ -23,7 +36,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //historyへ
@@ -34,7 +53,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //likeへ
@@ -45,7 +70,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //skillへ
@@ -56,7 +87,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //archiveへ
@@ -67,7 +104,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //portfolioへ
@@ -78,7 +121,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //communityへ
@@ -89,7 +138,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //contactへ
@@ -100,7 +155,13 @@ $(function(){
        }, {
            queue : false
        });
-       $('.navicard').removeClass('navicard_ani');
+       $('.sec').show();
+        $('.navicard').animate({
+        opacity: 0
+      },750);
+        setTimeout(function(){
+          $('.navicard').css('right',"-200%");
+        },750);
    });
 
    //community
