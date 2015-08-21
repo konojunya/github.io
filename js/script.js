@@ -18,7 +18,7 @@ $(function(){
   },700);
   setTimeout(function(){
     $('.top').css('display','none');
-    $('.wrapper').fadeIn();
+    $('.wrapper').fadeIn(2000);
   },1900)
   });
 
