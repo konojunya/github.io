@@ -19,20 +19,20 @@
 }@keyframes rotateanimation{0%{transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);-moz-transform:rotate(0deg)}10%{transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);-moz-transform:rotate(0deg)}
 20%{transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);-moz-transform:rotate(90deg)}100%{transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);-moz-transform:rotate(90deg)}
 }.wrapper{width:100%;height:100%;display:none}.fa-bars{position:fixed;top:30px;right:50px;width:5rem;height:5rem;text-align:center;cursor:pointer;z-index:1000}
-.fa-chevron-up{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:black;cursor:pointer;z-index:1000}.navicard{position:fixed;top:0;right:-200%;width:100%;height:100%;background-color:rgba(255,255,255,0.8);z-index:900;overflow:scroll}
+.fa-chevron-up{position:fixed;right:50px;bottom:30px;width:5rem;height:5rem;text-align:center;color:black;cursor:pointer;z-index:1000}.navicard{position:fixed;top:0;right:-200%;width:100%;height:100%;background-color:rgba(255,255,255,0.95);z-index:900;overflow:scroll}
 .navicard ul{list-style:none}.navicard li{width:100%;height:4.5rem;line-height:4.5rem;text-align:center;font-family:'Poiret One',cursive;font-size:2rem;z-index:1000}
-.navicard li:hover{color:white;background-color:rgba(0,0,0,0.8)}.home{width:100%;height:100%;padding:5% 0;text-align:center;background-color:#e87771}.home img{margin-bottom:2%;width:25%}
-.home img+p{font-family:'Bad Script',cursive;font-size:40px}.home p{line-height:40px;font-size:25px;font-family:'Reenie Beanie',cursive}
-.history{width:100%;height:100%;background-color:#5e9e84}.history_contents,.like_contents,.archive_contents{width:80%;height:70%;overflow-y:scroll;margin:0 auto;background-color:rgba(255,255,255,0.65);-webkit-overflow-scrolling:touch}
-.history_contents ul{list-style:circle;padding-left:5%}.history_contents li{line-height:2rem;margin:3% 0}.like{width:100%;height:100%;background-color:#5f8692;text-align:center}
+.navicard li:hover{color:white;background-color:rgba(0,0,0,0.8)}.home{width:100%;height:100%;padding:5% 0;text-align:center;background-color:rgba(255,255,255,0.9)}
+.home img{margin-bottom:2%;width:25%}.home img+p{font-family:'Bad Script',cursive;font-size:40px}.home p{line-height:40px;font-size:25px;font-family:'Reenie Beanie',cursive}
+.history{width:100%;height:100%;background-color:rgba(255,255,255,0.8)}.history_contents,.like_contents,.archive_contents{width:80%;height:70%;overflow-y:scroll;margin:0 auto;background-color:rgba(255,255,255,0.65);-webkit-overflow-scrolling:touch}
+.history_contents ul{list-style:circle;padding-left:5%}.history_contents li{line-height:2rem;margin:3% 0}.like{width:100%;height:100%;background-color:rgba(255,255,255,0.7);text-align:center}
 .like_contents h3{font-size:3.5rem;padding:2% 0;font-family:'Poiret One',cursive}.like_contents p{text-decoration:underline;padding:3% 0;font-size:1rem;font-weight:bold}
 .like_contents input{padding-left:2%;font-size:20px;display:inline-block;width:25%;height:13%;border:5px double black;background-color:rgba(255,255,255,0.8)}
-.skill{width:100%;height:100%;background-color:#f6c947}.skill p{text-align:center}.skill .graph{background-color:white;position:relative;margin:20px auto;width:300px;border:1px solid black;padding:2px}
-.skill .bar{display:block;position:relative;background-color:#28242d;text-align:center;color:white;height:2em;line-height:2em}.archive{width:100%;height:100%;background-color:#3e894b}
-.archive_contents li{background-color:rgba(75,143,136,0.3);padding:2% 0;text-align:center}.portfolio{width:100%;height:100%;background-color:#55c8a8}.community{width:100%;height:100%;background-color:#72c881}
-.community_contents{margin:0 auto;width:50%;height:50%;overflow:hidden;background-image:url(http://techlogics.link/images/icon.png);background-size:100%;background-repeat:no-repeat}
+.skill{width:100%;height:100%;background-color:rgba(255,255,255,0.6)}.skill p{text-align:center}.skill .graph{background-color:white;position:relative;margin:20px auto;width:300px;border:1px solid black;padding:2px}
+.skill .bar{display:block;position:relative;background-color:#28242d;text-align:center;color:white;height:2em;line-height:2em}.archive{width:100%;height:100%;background-color:rgba(255,255,255,0.5)}
+.archive_contents li{background-color:rgba(255,255,255,0.5);padding:2% 0;text-align:center}.portfolio{width:100%;height:100%;background-color:rgba(255,255,255,0.4)}
+.community{width:100%;height:100%;background-color:rgba(255,255,255,0.35)}.community_contents{margin:0 auto;width:50%;height:50%;overflow:hidden;background-image:url(http://techlogics.link/images/icon.png);background-size:100%;background-repeat:no-repeat}
 .community_card{width:100%;height:100%;position:relative;top:-200%;left:0;background-color:rgba(0,0,0,0.9);color:white}.community_card a{color:skyblue}
-.community_card p{padding:5%;line-height:3rem}.contact{width:100%;height:100%;background-color:#a5cf48}.sns{width:80%;height:70%;margin:0 auto;text-align:center}
+.community_card p{padding:5%;line-height:3rem}.contact{width:100%;height:100%;background-color:rgba(255,255,255,0.3)}.sns{width:80%;height:70%;margin:0 auto;text-align:center}
 .sns a{color:black;text-decoration:none;z-index:-1}.sns i{padding:10% 5%;z-index:-1}.fa-twitter:hover{color:#377bd3!important}.fa-facebook:hover{color:#314887!important}
 .fa-google-plus:hover{color:#bb4836!important}.fa-github:hover{color:#fff!important}.footer{width:100%;height:auto;letter-spacing:.3rem;text-align:center;font-family:'PT Sans Narrow',sans-serif;background-color:black;color:white;padding:1% 0}
 @media only screen and (max-width:414px){h2{padding:8% 0}.top .img{width:25%;margin:40% auto}.b1{position:absolute;top:80%;left:3%;font-size:1rem}.b2{position:absolute;top:3%;right:3%;font-size:2rem;display:none}
