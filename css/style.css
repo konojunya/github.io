@@ -6,11 +6,13 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Chewy);
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
 
 body,html{
 	width: 100%;
 	height: 100%;
 	-webkit-overflow-scrolling: touch;
+	background-color: black;
 }
 *{
 	margin: 0;
@@ -29,10 +31,245 @@ h2{
 homepage
 
 */
+.top{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	overflow: hidden;
+}
+.top .img{
+	display: block;
+	width: 10%;
+	margin: 10% auto;
+	-webkit-transform: rotate(0deg);
+}
+.bgchara{
+	color: red;
+	font-family: 'Press Start 2P', cursive;
+}
+.b5_ani,
+.b3_ani{
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation: bounceIn 6s infinite;
+	-o-animation: bounceIn 6s infinite;
+	animation: bounceIn 6s infinite;
+}
+.b7_ani,
+.b9_ani{
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation: bounceIn 5s infinite;
+	-o-animation: bounceIn 5s infinite;
+	animation: bounceIn 5s infinite;
+}
+@-webkit-keyframes bounceIn {
+  0%,100%{
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+
+  75% {
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+  }
+
+  90% {
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+  }
+}
+.b1_ani,
+.b4_ani{
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation: bounceIn 2s infinite;
+	-o-animation: bounceIn 2s infinite;
+	animation: bounceIn 2s infinite;
+}
+.b2_ani,
+.b6_ani,
+.b8_ani{
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
+	-webkit-animation: bounceIn 3s infinite;
+	-o-animation: bounceIn 3s infinite;
+	animation: bounceIn 3s infinite;
+}
+.b1{
+	position: absolute;
+	top: 10%;	
+	left: 10%;
+	font-size: 3rem;
+}
+.b2{
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	font-size: 2rem;
+	opacity: 0.7;
+}
+.b3{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	font-size: 3rem;
+	opacity: 0.7;
+}
+.b4{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	font-size: 3rem;
+}
+.b5{
+	position: absolute;
+	top: 30%;
+	right: 20%;
+	font-size: 2rem;
+	opacity: 0.4;
+}
+.b6{
+	position: absolute;
+	top: 15%;
+	right: 20%;
+	font-size: 2.5rem;
+}
+.b7{
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	font-size: 3.5rem;
+}
+.b8{
+	position: absolute;
+	top: 60%;
+	left: 15%;
+	font-size: 4rem;
+	opacity: 0.6;
+}
+.b9{
+	position: absolute;
+	top: 70%;
+	right: 10%;
+	font-size: 6rem;
+}
+.rotateanimation{
+	-webkit-animation-name: rotateanimation;
+	-o-animation-name: rotateanimation;
+	animation-name: rotateanimation;
+	-webkit-animation: rotateanimation 2s;
+	-o-animation: rotateanimation 2s;
+	animation: rotateanimation 2s;
+}
+@-webkit-keyframes rotateanimation {
+	0%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	60%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+}
+@-o-keyframes rotateanimation {
+	0%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	60%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+}
+@-moz-keyframes rotateanimation {
+	0%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	60%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+}
+@keyframes rotateanimation {
+	0%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	60%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+	}
+}
 .wrapper{
 	width: 100%;
 	height: 100%;
-	position: relative;
+	display: none;
 }
 .fa-bars{
 	position: fixed;
@@ -270,6 +507,67 @@ homepage
 @media only screen and (max-width: 414px){
 	h2{
 		padding: 8% 0;
+	}
+	.top .img{
+		width: 25%;
+		margin: 40% auto;
+	}
+	.b1{
+		position: absolute;
+		top: 80%;	
+		left: 3%;
+		font-size: 1rem;
+	}
+	.b2{
+		position: absolute;
+		top: 3%;
+		right: 3%;
+		font-size: 2rem;
+		display: none;
+	}
+	.b3{
+		position: absolute;
+		top: 60%;
+		left: 3%;
+		font-size: 1rem;
+		display: none;
+	}
+	.b4{
+		position: absolute;
+		top: 10%;
+		right: 20%;
+		font-size: 1rem;
+	}
+	.b5{
+		position: absolute;
+		top: 5%;
+		left: 10%;
+		font-size: 2rem;
+	}
+	.b6{
+		position: absolute;
+		top: 15%;
+		right: 5%;
+		font-size: 1.5rem;
+	}
+	.b7{
+		position: absolute;
+		top: 40%;
+		left: 10%;
+		font-size: 1rem;
+	}
+	.b8{
+		position: absolute;
+		top: 60%;
+		left: 15%;
+		font-size: 2.5rem;
+		opacity: 0.6;
+	}
+	.b9{
+		position: absolute;
+		top: 70%;
+		right: 3%;
+		font-size: 4rem;
 	}
 	.fa-bars{
 		top: 10px;

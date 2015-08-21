@@ -1,5 +1,27 @@
 //main js
 $(function(){
+  //animation
+  $('.top .img').hover(function(){
+    $('.top .img').addClass('rotateanimation');
+  setTimeout(function(){
+    $('.bgchara').css('color','green');
+    $('.bgchara').html("Open");
+    $('.bgchara').removeClass('b1_ani');
+    $('.bgchara').removeClass('b2_ani');
+    $('.bgchara').removeClass('b3_ani');
+    $('.bgchara').removeClass('b4_ani');
+    $('.bgchara').removeClass('b5_ani');
+    $('.bgchara').removeClass('b6_ani');
+    $('.bgchara').removeClass('b7_ani');
+    $('.bgchara').removeClass('b8_ani');
+    $('.bgchara').removeClass('b9_ani');
+  },1300);
+  setTimeout(function(){
+    $('.top').css('display','none');
+    $('.wrapper').fadeIn();
+  },1900)
+  });
+
    //topへ
    $('.fa-chevron-up').click(function(){
       $("body").animate({scrollTop:0},1000);
@@ -29,8 +51,8 @@ $(function(){
       });
 
    //homeへ
-   var home_position = $('.home').offset().top;
    $('.navi_home').click(function(){
+    var home_position = $('.home').offset().top;
        $("html,body").animate({
            scrollTop : home_position
        }, {
@@ -46,8 +68,8 @@ $(function(){
    });
 
    //historyへ
-   var history_position = $('.history').offset().top;
    $('.navi_history').click(function(){
+    var history_position = $('.history').offset().top;
        $("html,body").animate({
            scrollTop : history_position
        }, {
@@ -63,8 +85,8 @@ $(function(){
    });
 
    //likeへ
-   var like_position = $('.like').offset().top;
    $('.navi_like').click(function(){
+       var like_position = $('.like').offset().top;
        $("html,body").animate({
            scrollTop : like_position
        }, {
@@ -80,8 +102,8 @@ $(function(){
    });
 
    //skillへ
-   var skill_position = $('.skill').offset().top;
    $('.navi_skill').click(function(){
+       var skill_position = $('.skill').offset().top;
        $("html,body").animate({
            scrollTop : skill_position
        }, {
@@ -97,8 +119,8 @@ $(function(){
    });
 
    //archiveへ
-   var archive_position = $('.archive').offset().top;
    $('.navi_archive').click(function(){
+       var archive_position = $('.archive').offset().top;
        $("html,body").animate({
            scrollTop : archive_position
        }, {
@@ -114,8 +136,8 @@ $(function(){
    });
 
    //portfolioへ
-   var portfolio_position = $('.portfolio').offset().top;
    $('.navi_portfolio').click(function(){
+       var portfolio_position = $('.portfolio').offset().top;
        $("html,body").animate({
            scrollTop : portfolio_position
        }, {
@@ -131,8 +153,8 @@ $(function(){
    });
 
    //communityへ
-   var community_position = $('.community').offset().top;
    $('.navi_community').click(function(){
+       var community_position = $('.community').offset().top;
        $("html,body").animate({
            scrollTop : community_position
        }, {
@@ -148,8 +170,8 @@ $(function(){
    });
 
    //contactへ
-   var contact_position = $('.contact').offset().top;
    $('.navi_contact').click(function(){
+       var contact_position = $('.contact').offset().top;
        $("html,body").animate({
            scrollTop : contact_position
        }, {
