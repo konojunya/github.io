@@ -175,7 +175,7 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	30%{
+	25%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -201,7 +201,7 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	30%{
+	25%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -227,7 +227,7 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	30%{
+	25%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -253,7 +253,7 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	30%{
+	25%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
