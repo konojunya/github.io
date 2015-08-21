@@ -15,7 +15,7 @@ $(function(){
     $('.bgchara').removeClass('b7_ani');
     $('.bgchara').removeClass('b8_ani');
     $('.bgchara').removeClass('b9_ani');
-  },1300);
+  },700);
   setTimeout(function(){
     $('.top').css('display','none');
     $('.wrapper').fadeIn();

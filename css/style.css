@@ -169,13 +169,13 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	50%{
+	20%{
 		transform: rotate(0deg);
 		-webkit-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	60%{
+	30%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -195,13 +195,13 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	50%{
+	20%{
 		transform: rotate(0deg);
 		-webkit-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	60%{
+	30%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -221,13 +221,13 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	50%{
+	20%{
 		transform: rotate(0deg);
 		-webkit-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	60%{
+	30%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -247,13 +247,13 @@ homepage
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	50%{
+	20%{
 		transform: rotate(0deg);
 		-webkit-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
-	60%{
+	30%{
 		transform: rotate(90deg);
 		-webkit-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
