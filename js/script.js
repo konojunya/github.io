@@ -1,27 +1,5 @@
 //main js
 $(function(){
-  //animation
-  $('.top .img').hover(function(){
-    $('.top .img').addClass('rotateanimation');
-  setTimeout(function(){
-    $('.bgchara').css('color','green');
-    $('.bgchara').html("Open");
-    $('.bgchara').removeClass('b1_ani');
-    $('.bgchara').removeClass('b2_ani');
-    $('.bgchara').removeClass('b3_ani');
-    $('.bgchara').removeClass('b4_ani');
-    $('.bgchara').removeClass('b5_ani');
-    $('.bgchara').removeClass('b6_ani');
-    $('.bgchara').removeClass('b7_ani');
-    $('.bgchara').removeClass('b8_ani');
-    $('.bgchara').removeClass('b9_ani');
-  },700);
-  setTimeout(function(){
-    $('.top').css('display','none');
-    $('.wrapper').fadeIn(2000);
-  },1900)
-  });
-
    //topへ
    $('.fa-chevron-up').click(function(){
       $("body").animate({scrollTop:0},1000);
