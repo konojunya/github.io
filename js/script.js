@@ -1,5 +1,10 @@
 //main js
 $(function(){
+      $("#fakeLoader").fakeLoader({
+        timeToHide: 2500,
+        spinner: "spinner2",
+        bgColor: "rgb(0,0,0)"
+      });
    //topへ
    $('.fa-chevron-up').click(function(){
       $("body").animate({scrollTop:0},1000);
