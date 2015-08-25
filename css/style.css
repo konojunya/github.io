@@ -109,7 +109,8 @@ h2{
 	overflow-y: scroll;
 	margin: 0 auto;
 	color: rgba(0,0,0,0.8);
-	background-color: rgba(255,255,255,0.5);
+	border: 5px double black;
+	background-color: rgba(0,0,0,0.1);
 	-webkit-overflow-scrolling: touch;
 }
 .history_contents ul{
@@ -174,7 +175,6 @@ h2{
 	height: 100%;
 }
 .archive_contents li{
-	background-color: rgba(255,255,255,0.5);
 	padding: 2% 0;
 	text-align: center;
 }
@@ -238,9 +238,6 @@ h2{
 }
 .fa-google-plus:hover{
 	color: rgb(187,72,54)!important;
-}
-.fa-github:hover{
-	color: rgb(255,255,255)!important;
 }
 .footer{
 	width: 100%;
