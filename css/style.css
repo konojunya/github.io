@@ -346,6 +346,11 @@ h2{
 		height: 100%;
 		width: 30%;
 	}
+	.community_contents{
+		width: 90%;
+		height: 60%;
+		margin: 5% auto;
+	}
 	.sns i{
 		padding: 5%;
 		font-size: 4rem;
