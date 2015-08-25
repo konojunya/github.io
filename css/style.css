@@ -343,8 +343,7 @@ h2{
 		height: 20%;
 	}
 	.community_contents img{
-		height: 100%;
-		width: 30%;
+		overflow: scroll;
 	}
 	.community_contents{
 		width: 90%;
