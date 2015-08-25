@@ -170,17 +170,17 @@ $(function(){
    });
 
    //community
-   $('.community_contents').hover(
-   function(){
-      $('.community_card').animate({
-         top: "0"
-      },300);
-   },
-   function(){
-      $('.community_card').animate({
-         top: "-200%"
-      },300);
-   });
+   // $('.community_contents').hover(
+   // function(){
+   //    $('.community_card').animate({
+   //       top: "-120%"
+   //    },300);
+   // },
+   // function(){
+   //    $('.community_card').animate({
+   //       top: "0%"
+   //    },300);
+   // });
 });
 //time js
 function set2fig(num) {
