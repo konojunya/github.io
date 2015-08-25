@@ -338,10 +338,6 @@ h2{
 		font-size: 10px;
 		line-height: 1.5rem;
 	}
-	.community_contents{
-		width: 70%;
-		height: 20%;
-	}
 	.community_contents img{
 		overflow: scroll;
 	}
