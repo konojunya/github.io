@@ -194,17 +194,21 @@ h2{
 	text-align: center;
 }
 .portfolio_contents{
-	display: inline-block;
-	text-align: center;
-	width: 25%;
-	height: 60%;
+	width: 90%;
+	height: auto;
 	overflow: scroll;
 	background-color: white;
-	margin: 3% 3%;
+	margin: 3% auto;
 }
 .portfolio_contents img{
 	width: 100%;
 	z-index: -1;
+}
+.portfolio_contents p{
+	color: black;
+}
+.portfolio_contents a{
+	text-decoration: none;
 }
 .community{
 	width: 100%;
