@@ -87,6 +87,7 @@ h2{
 .home img{
 	margin-bottom: 2%;
 	width: 25%;
+	max-width: 300px;
 }
 .home img + p{
 	font-family: 'Bad Script', cursive;
@@ -200,6 +201,10 @@ h2{
 	overflow: scroll;
 	background-color: white;
 	margin: 3% 3%;
+}
+.portfolio_contents img{
+	width: 100%;
+	z-index: -1;
 }
 .community{
 	width: 100%;
