@@ -1,5 +1,12 @@
 //main js
 $(function(){
+  $('.navicard').particleground({
+    dotColor: "#A0A0A0",
+    lineColor: "#A0A0A0",
+    density: "9500",
+    parallaxMultiplier: "10",
+    parallax: false
+  });
       $("#fakeLoader").fakeLoader({
         timeToHide: 2500,
         spinner: "spinner2",
