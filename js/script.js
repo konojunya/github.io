@@ -4,7 +4,7 @@ $(function(){
   $('.fa-angle-double-up').on("click",function(){
     $('html,body').animate({
       scrollTop: 0
-    },5000);
+    },3000);
   });
 
 });
