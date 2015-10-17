@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="ja" ng-app>
+<html lang="ja">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, user-scalable=yes">
-	<meta name="description" content="konojunyaのホームページです。twitterは@konojunyaにてぜひフォローください。IT分野に興味があります。" />
-	<meta name="keywords" content="konojunya,kono,junya,@konojunya,こうの,じゅんや,こうのじゅんや,河野,純也,河野純也,エンジニア,engineer,developer,デベロッパ,プログラマ,programmer" />
-	<meta name="author" content="河野純也" />
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<!-- meta name="viewport" content="width=device-width, user-scalable=yes"/> -->
+	<meta name="description" content="konojunyaのホームページです。twitterは@konojunyaにてぜひフォローください。IT分野に興味があります。"/>
+	<meta name="keywords" content="konojunya,kono,junya,@konojunya,こうの,じゅんや,こうのじゅんや,河野,純也,河野純也,エンジニア,engineer,developer,デベロッパ,プログラマ,programmer"/>
+	<meta name="author" content="河野純也"/>
 	<meta property="og:type" content="website"/>
-	<meta content="summary" name="twitter:card" />
-	<meta content="@konojunya" name="twitter:site" />
+	<meta content="summary" name="twitter:card"/>
+	<meta content="@konojunya" name="twitter:site"/>
 	<meta property="og:site_name" content="konojunya"/>
+
 	<title>Junya's World</title>
+
 	<link rel="shortcut icon" href="./img/favicon.ico">
+	<!-- stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!-- font -->
 	<link href="./css/font-awesome.min.css" rel="stylesheet">
+	<!-- pulgin -->
 	<link rel="stylesheet" href="./css/fakeLoader.css">
-	<script type="text/javascript" src="./js/jquery.js"></script>
-	<script src="http://www.google.com/jsapi"></script>
-	<script type="text/javascript" src="./js/angular.min.js"></script>
-	<script type="text/javascript" src="./js/fakeLoader.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.particleground.min.js"></script>
+
 	<script>
 		(function(i,s,o,g,r,a,m){
    i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,228 +33,192 @@
 	</script>
 </head>
 <body>
-	<div id="fakeLoader"></div>
-	<div class="wrapper">
-		<i class="fa fa-bars fa-2x first"></i><i class="fa fa-bars fa-2x sec"></i>
-		<div class="navicard">
-			<a href="https://twitter.com/konojunya" class="twitter-follow-button" data-show-count="true">Follow @konojunya</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-			<ul>
-				<li class="navi_home">Home</li>
-				<li class="navi_history">History</li>
-				<li class="navi_like">Like</li>
-				<li class="navi_skill">Skill</li>
-				<li class="navi_archive">Archive</li>
-				<li class="navi_portfolio">Portfolio</li>
-				<li class="navi_community">Community</li>
-				<li class="navi_contact">Contact</li>
-			</ul>
+	<!-- top -->
+	<div id="top" data-0="right: 0%; top: 0%;" data-3000="right: -100%; top: -100%;">
+		<div class="icon">
+			<img src="./img/icon.gif" alt="icon">
 		</div>
-		<i class="fa fa-chevron-up fa-2x"></i>
-		<div class="home">
-			 <img src="./img/icon.gif" alt="">
-			<p>Kono Junya</p>
-			<p>Web Creator</p>
-			<p>18 years old</p>
-		</div>
-		<div class="history">
-			<h2>History</h2>
+		<p class="name">Kono Junya</p>
+		<p>Web Developer</p>
+	</div>
+
+	<!-- history -->
+	<div id="history" data-4000="left: 0%; bottom: 0%;" data-7000="left: -100%; bottom: -100%;">
+		<h2>History</h2>
 			<div class="history_contents">
 				<ul>
 				<!-- 生まれる -->
-				<li>
-					1997年3月3日 兵庫県明石市で誕生。
-					<br>
-					1ヶ月早く生まれたため体重が1500gしかなかった。
-				</li>
-			</ul>
-			<ul>
-				<!-- 小学校 -->
-				<li>
-					2003年 4月 神戸市立東舞子小学校に入学。
-					<br>
-					小学生で合わせて12針縫うことになる。
-				</li>
-				<li>
-					読者モデル的なことをしていた時代。
-					<br>
-					2009年に<a href="http://girlsfes.narumiya-online.jp/boys/" target="_blank">「ブルークロス スーパーボーイズオーディション」</a>にて西日本代表を勝ち取る
-				</li>
-				<li>
-					タップダンスを始める。
-				</li>
-				<li>
-					水泳と珠算も始める、日能研にいって勉強も頑張る()
-				</li>
-			</ul>
-			<ul>
-				<!-- 中学校 -->
-				<li>
-					2009年 4月 神戸市立歌敷山中学校に入学。
-					<br>
-					友達も多かったためサッカー部にはいる。
-				</li>
-				<li>
-					アメブロをしていて、プラグインのすごさに気づきHTML,CSS,Javascriptの存在を知る。
-				</li>
-			</ul>
-			<ul>
-				<!-- 高校 -->
-				<li>
-					2012年 4月 兵庫県立伊川谷高等学校に入学。
-				</li>
-				<li>
-					高2年の頃、iPhoneのアプリ開発のため「Objective-C」に手を出す。
-				</li>
-				<li>
-					ダンス部副部長に就任するも、部活に行かず顧問から退部届け渡される。
-				</li>
-			</ul>
-			<ul>
-				<!-- 専門学校 -->
-				<li>
-					2015年 4月 HAL大阪に入学する
-				</li>
-				<li>
-					<a href="http://techlogics.link/" traget="_blank">Techlogics</a>に参加して様々なプログラマと出会う。代表の<a href="http://twitter.com/hey_icchiman">いっちマン</a>に憧れる。
-				</li>
-				<li>
-					<a href="http://techkidscamp.jp/" target="_blank">株式会社CA TechKids</a>のメンターとして小学生にプログラミングを教える。
-				</li>
-				<li>
-					様々な会社のCEOやCOO、CTOの方と知り合いになれたり、<a href="https://life-is-tech.com/">Life is Tech</a>の生徒の子たちとも友達になり、人脈が広がる。
-				</li>
-			</ul>
-			<ul>
-				<li>
-					そして、、、<span id="clock" style="color:#009A5A;"></span>の今！！！君は俺のホームページを見てる！！！！！ありがとう！！！！
-				</li>
-			</ul>
+					<li>
+						1997年3月3日 兵庫県明石市で誕生。
+						<br>
+						1ヶ月早く生まれたため体重が1500gしかなかった。
+					</li>
+				</ul>
+				<ul>
+					<!-- 小学校 -->
+					<li>
+						2003年 4月 神戸市立東舞子小学校に入学。
+						<br>
+						小学生で合わせて12針縫うことになる。
+					</li>
+					<li>
+						読者モデル的なことをしていた時代。
+						<br>
+						2009年に<a href="http://girlsfes.narumiya-online.jp/boys/" target="_blank">「ブルークロス スーパーボーイズオーディション」</a>にて西日本代表を勝ち取る
+					</li>
+					<li>
+						タップダンスを始める。
+					</li>
+					<li>
+						水泳と珠算も始める、日能研にいって勉強も頑張る()
+					</li>
+				</ul>
+				<ul>
+					<!-- 中学校 -->
+					<li>
+						2009年 4月 神戸市立歌敷山中学校に入学。
+						<br>
+						友達も多かったためサッカー部にはいる。
+					</li>
+					<li>
+						アメブロをしていて、プラグインのすごさに気づきHTML,CSS,Javascriptの存在を知る。
+					</li>
+				</ul>
+				<ul>
+					<!-- 高校 -->
+					<li>
+						2012年 4月 兵庫県立伊川谷高等学校に入学。
+					</li>
+					<li>
+						高2年の頃、iPhoneのアプリ開発のため「Objective-C」に手を出す。
+					</li>
+					<li>
+						ダンス部副部長に就任するも、部活に行かず顧問から退部届け渡される。
+					</li>
+				</ul>
+				<ul>
+					<!-- 専門学校 -->
+					<li>
+						2015年 4月 HAL大阪に入学する
+					</li>
+					<li>
+						<a href="http://techlogics.link/" traget="_blank">Techlogics</a>に参加して様々なプログラマと出会う。代表の<a href="http://twitter.com/hey_icchiman">いっちマン</a>に憧れる。
+					</li>
+					<li>
+						<a href="http://techkidscamp.jp/" target="_blank">株式会社CA TechKids</a>のメンターとして小学生にプログラミングを教える。
+					</li>
+					<li>
+						様々な会社のCEOやCOO、CTOの方と知り合いになれたり、<a href="https://life-is-tech.com/" target="_blank">Life is Tech</a>の生徒の子たちとも友達になり、人脈が広がる。
+					</li>
+					<li>
+						<a href="http://farconnection.jp" target="_blank">Farconnection Inc.</a>のEvangelistになる。
+					</li>
+					<li>
+						#HiveShibuya に行き、木下さんや岡山さんを含め様々な企業の方との交流が増える。
+					</li>
+				</ul>
 			</div>
-		</div>
-		<div class="like">
-			<h2>Like</h2>
-			<div class="like_contents">
-				<h3>Food</h3>
-				<p>
-					肉、いちご、和菓子
-				</p>
-				<h3>Person</h3>
-				<p>
-					スティーブ・ジョブズ<br>
-					マイケル・ジャクソン<br>
-					Team Lab 猪子寿之<br>
-				</p>
-				<h3>Movies</h3>
-				<p>
-					This is it<br>
-					ハリーポッター
-				</p>
-				<h3>How about you ?</h3>
-				<input type="text" ng-model="yourName" placeholder="Your Answer"><br><br>
-		      <p>I like {{yourName}}.</p>
-			</div>
-		</div>
-		<div class="skill">
-			<h2>Skill</h2>
-			<p>Programming</p>
-			<div class="graph">
-				<span class="bar" style="width: 55%;">55%</span>
-			</div>
-			<p>Twitter</p>
-			<div class="graph">
-				<span class="bar" style="width: 90%;">90%</span>
-			</div>
-			<p>Dance</p>
-			<div class="graph">
-				<span class="bar" style="width: 70%;">70%</span>
-			</div>
-			<p>Tension</p>
-			<div class="graph">
-				<span class="bar" style="width: 120%;">120%</span>
-			</div>
-		</div>
-		<div class="archive">
-			<h2>Archive</h2>
-			<div class="archive_contents">
-				<ul id="feed"></ul>
-			</div>
-		</div>
-		<div class="portfolio">
-			<h2>Portfolio</h2>
-			<div class="portfolio_container">
-				<a href="http://messageroomjun.meteor.com" target="_blank">
-					<div class="portfolio_contents">
-						<img src="./img/messageroomjun.gif" alt="">
-						<p>
-							React.js + MongoDB + Material UIを使った掲示板のようなもの。<br>
-							言語の復習に作ったため時期消します
-						</p>
-					</div>
-				</a>
-				<a href="" target="">
-					<div class="portfolio_contents">
-						<img src="" alt="">
-						<p>
-							Comming Soon...
-						</p>
-					</div>
-				</a>
-				<a href="" target="">
-					<div class="portfolio_contents">
-						<img src="" alt="">
-						<p>
-							Comming Soon...
-						</p>
-					</div>
-				</a>
-				<a href="" target="">
-					<div class="portfolio_contents">
-						<img src="" alt="">
-						<p>
-							Comming Soon...
-						</p>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="community">
-			<h2>Community</h2>
-			<div class="community_container">
-				<div class="community_contents">
-				<img src="http://techlogics.link/img/icon.png" alt="">
-				<div class="community_card">
-					<p>
-						TechLogicsはエンジニア、デザイナー同士が繋がるための場所で、代表は<a href="http://farconnection.jp/" target="_blank">株式会社Far Connection</a> CEO&CTOの<a href="http://twitter.com/hey_icchiman" target="_blank">いっちマン</a><br>
-						<a href="http://techlogics.link" target="_blank">TechLogics</a>
-					</p>
+	</div>
+
+	<!-- portfolio -->
+	<div id="portfolio" data-8000="left: 0%; top: 0%;" data-11000="left: -100%; top: -100%;">
+		<h2>Portfolio</h2>
+		<div class="portfolio_contents">
+			<div class="portfolio_content">
+				<div class="portfolio_img">
+					<img src="./img/messageroomjun.gif" alt="coming soon">
 				</div>
+				<a href="http://messageroomjun.meteor.com" target="_blank">お遊び掲示板</a>
+				<p>
+					React.js + Meteor +Material UIを使った掲示板のようなもの。
+				</p>
 			</div>
-			<div class="community_contents">
-				<img src="./img/delta.jpg" alt="">
-				<div class="community_card">
-					<p>
-						学生デザイナー・エンジニア・プランナーが集い新たな価値を生み出す場所<br>
-						<a href="http://deltacross.net" target="_blank">Deltacross Kyoto</a>
-					</p>
+			<div class="portfolio_content">
+				<div class="portfolio_img">
+					<img src="./img/coming.jpg" alt="coming soon">
 				</div>
+				<a href="#" target="_blank">coming soon...</a>
+				<p>
+					coming soon...
+				</p>
 			</div>
+			<div class="portfolio_content">
+				<div class="portfolio_img">
+					<img src="./img/coming.jpg" alt="coming soon">
+				</div>
+				<a href="#" target="_blank">coming soon...</a>
+				<p>
+					coming soon...
+				</p>
 			</div>
-		</div>
-		<div class="contact">
-			<h2>Contact</h2>
-			<div class="sns">
-				<a href="http://twitter.com/?status=%e3%81%98%e3%82%85%e3%82%93%e3%81%98%e3%82%85%e3%82%93%e3%81%ae%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%bf%e3%82%93%e3%81%aa%e3%81%bf%e3%81%a6%e3%81%ad%ef%bc%81 http%3a%2f%2fkonojunya%2egithub%2eio @konojunya" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
-				<a href="https://www.facebook.com/profile.php?id=100007518556907" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
-				<a href="https://plus.google.com/u/0/105417723146736076728/posts" target="_blank"><i class="fa fa-google-plus fa-4x"></i></a>
-				<a href="http://github.com/konojunya" target="_blank"><i class="fa fa-github fa-4x"></i></a>
-				<a href="mailto:junya.developer@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+			<div class="portfolio_content">
+				<div class="portfolio_img">
+					<img src="./img/coming.jpg" alt="coming soon">
+				</div>
+				<a href="#" target="_blank">coming soon...</a>
+				<p>
+					coming soon...
+				</p>
 			</div>
-		</div>
-		<div class="footer">
-			<small>Copyright 2015 Junya Kono</small>
 		</div>
 	</div>
-<script src="./js/script.min.js"></script>
+
+	<!-- community -->
+	<div id="community" data-12000="right: 0%; bottom: 0%;" data-15000="right: -100%; bottom: -100%;">
+		<h2>Community</h2>
+		<div class="community_contents">
+			<div class="community_content" style="background-color: #FF5A08;">
+				<div class="community_img">
+					<img src="http://techlogics.link/img/icon.png" alt="community logo">
+				</div>
+				<p>
+					TechLogicsはエンジニア、デザイナー同士が繋がるための場所<br>
+					代表は<a href="http://farconnection.jp/" target="_blank">株式会社Far Connection</a> CEO&CTOの<a href="http://twitter.com/hey_icchiman" target="_blank">いっちマン</a><br>
+					<a href="http://techlogics.link" target="_blank">TechLogics</a>
+				</p>
+			</div>
+
+			<div class="community_content" style="background-color: #00B995;">
+				<div class="community_img">
+					<img src="./img/delta.jpg" alt="community logo">
+				</div>
+				<p>
+					学生デザイナー・エンジニア・プランナーが集い新たな価値を生み出す場所<br>
+					<a href="http://deltacross.net" target="_blank">Deltacross Kyoto</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- contact -->
+	<div id="contact" data-16000="bottom: 0%; transform: rotate(0deg); opacity: 1;" data-19000="bottom: -100%; transform: rotate(180deg); opacity: 0;">
+		<h2>Contact</h2>
+		<div class="sns">
+				<a class="fa fa-twitter fa-4x" href="http://twitter.com/konojunya/" target="_blank"></a>
+
+				<a class="fa fa-facebook fa-4x" href="https://www.facebook.com/profile.php?id=100007518556907" target="_blank"></a>
+
+				<a class="fa fa-google-plus fa-4x" href="https://plus.google.com/u/0/105417723146736076728/posts" target="_blank"></a>
+
+				<a class="fa fa-github fa-4x" href="http://github.com/konojunya" target="_blank"></a>
+
+				<a class="fa fa-envelope fa-4x" href="mailto:junya.developer@gmail.com"></a>
+			</div>
+	</div>
+
+	<!-- top -->
+	<div id="top2">
+		<div class="icon">
+			<img src="./img/icon.gif" alt="icon">
+		</div>
+		<p><a href="http://farconnection.jp" target="_blank">Farconnection.jp</a></p>
+		<small>Copyright (c) JunyaKono.</small>
+		<i class="fa fa-angle-double-up fa-5x"></i>
+	</div>
+
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="./js/skrollr.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
