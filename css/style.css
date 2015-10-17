@@ -1,14 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
-/* line 6, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 html, body {
   width: 100%;
   height: 100%;
-  -webkit-overflow-scrolling: touch;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +30,6 @@ h2 {
   text-align: center;
   background-color: white;
   position: fixed;
-  overflow: hidden;
   box-shadow: 0px 0px 50px black;
   z-index: 1000;
 }
@@ -42,10 +40,10 @@ h2 {
 /* line 40, ../sass/style.scss */
 #top p {
   font-family: 'Poiret One', cursive;
-  width: 30%;
   margin: 1% auto;
   font-size: 1.5rem;
   text-shadow: 0px 0px 15px black;
+  margin: 5% 0;
 }
 /* line 47, ../sass/style.scss */
 #top .icon {
@@ -69,7 +67,6 @@ h2 {
   text-align: center;
   background-color: white;
   position: fixed;
-  overflow: hidden;
   box-shadow: 0px 0px 50px black;
   z-index: 900;
 }
@@ -113,7 +110,6 @@ h2 {
   text-align: center;
   background-color: white;
   position: fixed;
-  overflow: hidden;
   box-shadow: 0px 0px 50px black;
   z-index: 800;
 }
@@ -151,7 +147,6 @@ h2 {
   text-align: center;
   background-color: white;
   position: fixed;
-  overflow: hidden;
   box-shadow: 0px 0px 50px black;
   z-index: 700;
 }
@@ -190,7 +185,6 @@ h2 {
   text-align: center;
   background-color: white;
   position: fixed;
-  overflow: hidden;
   box-shadow: 0px 0px 50px black;
   z-index: 600;
 }
@@ -229,25 +223,21 @@ h2 {
   text-align: center;
   background-color: white;
   position: fixed;
-  overflow: hidden;
   box-shadow: 0px 0px 50px black;
   z-index: 500;
   text-align: center;
 }
 /* line 178, ../sass/style.scss */
-#top2 p {
+#top2 a {
+  display: block;
+  color: black;
+  text-decoration: none;
   font-family: 'Orbitron', sans-serif;
-  width: 30%;
-  margin: 1% auto;
+  margin: 5% auto;
   font-size: 3rem;
   text-shadow: 0px 0px 15px #0051FF;
 }
-/* line 184, ../sass/style.scss */
-#top2 p a {
-  color: black;
-  text-decoration: none;
-}
-/* line 189, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 #top2 .icon {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
   width: 15rem;
@@ -256,13 +246,117 @@ h2 {
   overflow: hidden;
   margin: 5% auto;
 }
-/* line 196, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 #top2 .icon img {
   width: 100%;
   height: 100%;
 }
-/* line 201, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 #top2 i {
-  display: block;
-  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  /* line 206, ../sass/style.scss */
+  #top .name {
+    font-size: 3rem;
+  }
+  /* line 209, ../sass/style.scss */
+  #top p {
+    margin: 1% auto;
+    font-size: 1.5rem;
+    margin: 5% 0;
+  }
+  /* line 214, ../sass/style.scss */
+  #top .icon {
+    width: 10rem;
+    height: 10rem;
+    margin: 20% auto;
+  }
+
+  /* line 223, ../sass/style.scss */
+  #history .history_contents li {
+    font-size: 0.5rem;
+    line-height: 2rem;
+  }
+
+  /* line 232, ../sass/style.scss */
+  #portfolio .portfolio_contents .portfolio_content {
+    padding: 5% 0;
+  }
+  /* line 234, ../sass/style.scss */
+  #portfolio .portfolio_contents .portfolio_content p {
+    font-size: 0.5rem;
+  }
+  /* line 237, ../sass/style.scss */
+  #portfolio .portfolio_contents .portfolio_content .portfolio_img {
+    width: 50%;
+    margin: 1% auto;
+    cursor: pointer;
+  }
+  /* line 241, ../sass/style.scss */
+  #portfolio .portfolio_contents .portfolio_content .portfolio_img img {
+    width: 100%;
+  }
+
+  /* line 251, ../sass/style.scss */
+  #community .community_contents .community_content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+  /* line 255, ../sass/style.scss */
+  #community .community_contents .community_content p {
+    line-height: 2rem;
+    font-size: 0.5rem;
+  }
+  /* line 259, ../sass/style.scss */
+  #community .community_contents .community_content .community_img {
+    width: 30%;
+    margin: 0 auto;
+  }
+  /* line 262, ../sass/style.scss */
+  #community .community_contents .community_content .community_img img {
+    width: 100%;
+  }
+
+  /* line 270, ../sass/style.scss */
+  #top2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 0px 50px black;
+    z-index: 500;
+    text-align: center;
+  }
+  /* line 274, ../sass/style.scss */
+  #top2 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    margin: 1% auto;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 15px #0051FF;
+  }
+  /* line 282, ../sass/style.scss */
+  #top2 .icon {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 30%;
+    overflow: hidden;
+    margin: 5% auto;
+  }
+  /* line 289, ../sass/style.scss */
+  #top2 .icon img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 294, ../sass/style.scss */
+  #top2 i {
+    display: block;
+    cursor: pointer;
+  }
 }
