@@ -23,6 +23,11 @@ html,body{
 	box-shadow: 0px 0px 50px rgb(0,0,0);
 }
 
+.mobile{
+	font-size: $mobileFontSize;
+	line-height: 1.3rem;
+}
+
 h2{
 	font-family: 'Satisfy', cursive;
 	font-size: 3rem;
@@ -64,7 +69,6 @@ h2{
 	.history_contents{
 		width: 80%;
 		height: 60%;
-		box-shadow: 0px 0px 10px rgb(0,0,0);
 		overflow: scroll;
 		margin: 0 auto;
 		ul{
