@@ -27,6 +27,7 @@ $(function(){
   if(_ua.Mobile || _ua.Tablet){
     $('.pc').hide();
     $('.mobile').show();
+    $('#top2 i').hide();
   }else{
     $('.pc').show();
     $('.mobile').hide();
