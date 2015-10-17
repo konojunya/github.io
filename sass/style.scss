@@ -276,6 +276,11 @@ h2{
 		}
 	}
 
+#contact{
+	a{
+		margin: 10%;
+	}
+}
 	#top2{
 		@include def;
 		z-index: 500;
@@ -299,9 +304,6 @@ h2{
 				width: 100%;
 				height: 100%;
 			}
-		}
-		i{
-			display: none;
 		}
 	}
 }
