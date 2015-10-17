@@ -188,6 +188,9 @@ h2{
 		margin: 1% auto;
 		font-size: 3rem;
 		text-shadow: 0px 0px 15px #0051FF;
+		&:hover{
+			text-shadow: 0px 0px 15px #FF7400;
+		}
 	}
 	.icon{
 		box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
