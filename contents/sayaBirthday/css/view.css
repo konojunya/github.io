@@ -22,6 +22,7 @@ h1{
   text-decoration: none;
   color: white;
   text-shadow: 0px 0px 10px rgb(232, 88, 255);
+  font-size: 1.5rem;
 }
 #messages{
   width: 100%;
@@ -32,11 +33,19 @@ h1{
   width: 90%;
   text-align: center;
   margin: 0 auto;
-  position: relative;
 }
 .post_content{
   display: inline-block;
   border-radius: 10px;
   padding: 1%;
   margin: 1%;
+  color: rgba(37, 37, 37, 0.87);
+}
+@media only screen and (max-width: 414px) {
+  h1{
+    font-size: 20px;
+  }
+  .post_content{
+    margin: 2%;
+  }
 }

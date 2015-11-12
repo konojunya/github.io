@@ -41,22 +41,35 @@ h1{
   background-image: url(../img/bgi.gif);
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
-.message textarea,
-.message input{
+.message div{
   display: block;
-  padding: 1%;
-  margin: 3% auto;
+  margin: 0 auto;
+  color: rgba(56, 56, 56, 0.8);
 }
 .message p{
   text-align: center;
 }
 #postbtn{
-  padding: 1% 2%;
+  height: 3rem;
+  margin: 0 auto;
   background-color: rgb(255, 127, 242);
   color: white;
   border: 1px solid rgb(255,127,242);
   box-shadow: 5px 10px 30px rgba(0,0,0,0.5);
   font-weight: bold;
   letter-spacing: 0.3rem;
+}
+@media only screen and (max-width: 414px) {
+  h1{
+    font-size: 20px;
+  }
+  .message div{
+    font-size: 10px;
+  }
+  .message div textarea,
+  .message div input{
+    font-size: 16px;
+  }
 }

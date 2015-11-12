@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes"/>
   <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./css/post.css">
 </head>
 <body>
   <div class="mobile message">
     <h1>さやへメッセージを届けよう！</h1>
     <p class="err">メッセージと名前を入力してください！</p>
-    <textarea type="text" id="post" placeholder="メッセージ" rows="5"></textarea>
-    <input type="text" id="name" placeholder="お名前">
-    <input type="submit" value="Post" id="postbtn">
-    <a class="back" href="./index.html">Back</a>
+    <div class="mdl-textfield mdl-js-textfield">
+      <textarea type="text" class="mdl-textfield__input" type="text" id="post" placeholder="メッセージ" ></textarea>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="name" placeholder="お名前">
+    </div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="postbtn">Post!</button>
   </div>
   <script src="../../js/jquery.js"></script>
   <script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
