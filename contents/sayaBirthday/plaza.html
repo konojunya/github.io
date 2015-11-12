@@ -91,10 +91,9 @@
             post_space = null;
         function renderMessage(data){
           post_content = document.createElement("div");
-          post_content.className = "post_content post_ani1";
+          post_content.className = "post_content";
 
-          post_content.innerHTML = "<p>"+data.value.message+"</p>";
-          post_content.innerHTML = "<small>"+data.value.name+"</small>";
+          post_content.innerHTML = "<p>"+data.value.message+"</p>"+"<small>"+data.value.name+"</small>";
 
           // #post_space
           post_space = document.getElementById("post_space");
