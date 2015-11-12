@@ -3,56 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes"/>
-  <title>Hello Plaza !</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/animation.css">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="./css/post.css">
 </head>
 <body>
   <div class="mobile message">
     <h1>さやへメッセージを届けよう！</h1>
-    <textarea type="text" id="post" placeholder="メッセージ"></textarea>
+    <textarea type="text" id="post" placeholder="メッセージ" rows="5"></textarea>
     <input type="text" id="name" placeholder="お名前">
     <input type="submit" value="Post" id="postbtn">
     <a class="back" href="./index.html">Back</a>
   </div>
-  <div id="messages" class="pc">
-    <h1>さや誕生日おめでとう！！</h1>
-    <div id="post_space">
-    </div>
-    <a class="back" href="./index.html">Back</a>
-  </div>
-
   <script src="../../js/jquery.js"></script>
   <script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
   <script type="text/javascript">
     $(function(){
       !function(){
-        // user agent
-        var _ua = (function(u){
-          return {
-            Tablet:(u.indexOf("windows") != -1 && u.indexOf("touch") != -1)
-              || u.indexOf("ipad") != -1
-              || (u.indexOf("android") != -1 && u.indexOf("mobile") == -1)
-              || (u.indexOf("firefox") != -1 && u.indexOf("tablet") != -1)
-              || u.indexOf("kindle") != -1
-              || u.indexOf("silk") != -1
-              || u.indexOf("playbook") != -1,
-            Mobile:(u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
-              || u.indexOf("iphone") != -1
-              || u.indexOf("ipod") != -1
-              || (u.indexOf("android") != -1 && u.indexOf("mobile") != -1)
-              || (u.indexOf("firefox") != -1 && u.indexOf("mobile") != -1)
-              || u.indexOf("blackberry") != -1
-          }
-        })(window.navigator.userAgent.toLowerCase());
-        if(_ua.Mobile || _ua.Tablet){
-          $('.pc').hide();
-          $('.mobile').show();
-        }else{
-          $('.pc').show();
-        }
-
-        // milkcocoa code...
         var milkcocoa = new MilkCocoa('zooigsru86n.mlkcca.com');
 
         var ds = milkcocoa.dataStore('messages');
@@ -68,11 +34,29 @@
         });
 
         function post(){
-          var postani = ["post_content post_ani1","post_content post_ani2","post_content post_ani3"];
-          var postbgc = ["rgba(107, 255, 219,0.4)","rgba(131, 247, 188, 0.4)","rgba(150, 184, 251, 0.4)","rgba(238, 96, 255, 0.4)","rgba(255, 243, 26, 0.4)","rgba(255, 0, 138, 0.4)","rgba(109, 32, 236, 0.4)","rgba(255, 0, 0, 0.4)"];
+          var postani = ["post_content post_ani1",
+                        "post_content post_ani2",
+                        "post_content post_ani3"
+                      ];
+          var postbgc = ["rgba(107, 255, 219,0.4)",
+                        "rgba(131, 247, 188, 0.4)",
+                        "rgba(150, 184, 251, 0.4)",
+                        "rgba(238, 96, 255, 0.4)",
+                        "rgba(255, 243, 26, 0.4)",
+                        "rgba(255, 0, 138, 0.4)",
+                        "rgba(109, 32, 236, 0.4)",
+                        "rgba(255, 0, 0, 0.4)",
+                        "rgba(249, 64, 164, 0.4)",
+                        "rgba(175, 255, 75, 0.4)",
+                        "rgba(255, 233, 140, 0.4)",
+                        "rgba(73, 119, 159, 0.4)",
+                        "rgba(0, 137, 205, 0.4)",
+                        "rgba(121, 28, 128, 0.4)",
+                        "rgba(61, 175, 135, 0.4)"
+                      ];
 
           var aninum = Math.floor(Math.random()*3);
-          var bgcnum = Math.floor(Math.random()*8);
+          var bgcnum = Math.floor(Math.random()*15);
 
           var content = escapeHTML($("#post").val());
           var name = escapeHTML($('#name').val());
@@ -86,6 +70,7 @@
           }
           $("#post").val("");
           $('#name').val("");
+          window.location = "view.html";
         }
 
         $('#postbtn').on('click',function(){
@@ -99,7 +84,6 @@
           post_content.style.background = data.value.postbgc;
           post_content.innerHTML = "<p>"+data.value.message+"</p>"+"<small>By "+data.value.name+"</small>";
 
-          // #post_space
           document.getElementById("post_space").appendChild(post_content);
         }
 
