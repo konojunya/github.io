@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes"/>
+  <title>Hello Plaza !</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body>
+  <div class="mobile message">
+    <h1>さやへメッセージを届けよう！</h1>
+    <textarea type="text" id="post" placeholder="メッセージ"></textarea>
+    <input type="text" id="name" placeholder="お名前">
+    <input type="submit" value="Post" id="postbtn">
+    <a class="back" href="./index.html">Back</a>
+  </div>
+  <div id="messages" class="pc">
+    <h1>さや誕生日おめでとう！！</h1>
+    <div id="post_space">
+      <!-- <div class="post_content post_ani1">
+        <p class="message_content">誕生日おめでと！！！！！！！！！！！！</p>
+        <small class="message_name">かずき</small>
+      </div> -->
+    </div>
+    <a class="back" href="./index.html">Back</a>
+  </div>
+
+  <script src="../../js/jquery.js"></script>
+  <script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      !function(){
+        // user agent
+        var _ua = (function(u){
+          return {
+            Tablet:(u.indexOf("windows") != -1 && u.indexOf("touch") != -1)
+              || u.indexOf("ipad") != -1
+              || (u.indexOf("android") != -1 && u.indexOf("mobile") == -1)
+              || (u.indexOf("firefox") != -1 && u.indexOf("tablet") != -1)
+              || u.indexOf("kindle") != -1
+              || u.indexOf("silk") != -1
+              || u.indexOf("playbook") != -1,
+            Mobile:(u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
+              || u.indexOf("iphone") != -1
+              || u.indexOf("ipod") != -1
+              || (u.indexOf("android") != -1 && u.indexOf("mobile") != -1)
+              || (u.indexOf("firefox") != -1 && u.indexOf("mobile") != -1)
+              || u.indexOf("blackberry") != -1
+          }
+        })(window.navigator.userAgent.toLowerCase());
+        if(_ua.Mobile || _ua.Tablet){
+          $('.pc').hide();
+          $('.mobile').show();
+        }else{
+          $('.pc').show();
+        }
+
+        // milkcocoa code...
+        var milkcocoa = new MilkCocoa('zooigsru86n.mlkcca.com');
+
+        var ds = milkcocoa.dataStore('messages');
+
+        ds.stream().sort("desc").next(function(err,datas){
+          datas.forEach(function(data){
+            renderMessage(data);
+          });
+        });
+
+        ds.on("push",function(e){
+          renderMessage(e);
+        });
+
+        function post(){
+          var content = escapeHTML($("#post").val());
+          var name = escapeHTML($('#name').val());
+          if(content && content !== ""){
+            ds.push({
+              message: content,
+              name: name
+            },function(e){});
+          }
+          $("#post").val("");
+        }
+
+        $('#postbtn').on('click',function(){
+          post();
+        });
+
+        var post_content = null,
+            post_space = null;
+        function renderMessage(data){
+          post_content = document.createElement("div");
+          post_content.addClass("post_content");
+          post_content.addClass("post_ani1");
+
+          post_content.innerHTML = "<p>"+data.value.message+"</p>";
+          post_content.innerHTML = "<small>"+data.value.name+"</small>";
+
+          // #post_space
+          post_space = $('#post_space');
+          post_space.appendChild(post_content);
+        }
+
+        function escapeHTML(val) {
+          return $('<div>').text(val).html();
+        };
+      }();
+    });
+  </script>
+</body>
+</html>

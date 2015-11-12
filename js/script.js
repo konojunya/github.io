@@ -23,7 +23,7 @@ $(function(){
         || (u.indexOf("firefox") != -1 && u.indexOf("mobile") != -1)
         || u.indexOf("blackberry") != -1
     }
-  })(window.navigator.userAgent.toLowerCase())
+  })(window.navigator.userAgent.toLowerCase());
   if(_ua.Mobile || _ua.Tablet){
     $('.pc').hide();
     $('.mobile').show();
