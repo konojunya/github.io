@@ -18,10 +18,6 @@
   <div id="messages" class="pc">
     <h1>さや誕生日おめでとう！！</h1>
     <div id="post_space">
-      <!-- <div class="post_content post_ani1">
-        <p class="message_content">誕生日おめでと！！！！！！！！！！！！</p>
-        <small class="message_name">かずき</small>
-      </div> -->
     </div>
     <a class="back" href="./index.html">Back</a>
   </div>
@@ -72,15 +68,24 @@
         });
 
         function post(){
+          var postani = ["post_content post_ani1","post_content post_ani2","post_content post_ani3"];
+          var postbgc = ["rgba(107, 255, 219,0.4)","rgba(131, 247, 188, 0.4)","rgba(150, 184, 251, 0.4)","rgba(238, 96, 255, 0.4)","rgba(255, 243, 26, 0.4)","rgba(255, 0, 138, 0.4)","rgba(109, 32, 236, 0.4)","rgba(255, 0, 0, 0.4)"];
+
+          var aninum = Math.floor(Math.random()*3);
+          var bgcnum = Math.floor(Math.random()*8);
+
           var content = escapeHTML($("#post").val());
           var name = escapeHTML($('#name').val());
           if(content && content !== ""){
             ds.push({
               message: content,
-              name: name
+              name: name,
+              postani: postani[aninum],
+              postbgc: postbgc[bgcnum]
             },function(e){});
           }
           $("#post").val("");
+          $('#name').val("");
         }
 
         $('#postbtn').on('click',function(){
@@ -90,9 +95,9 @@
         var post_content = null
         function renderMessage(data){
           post_content = document.createElement("div");
-          post_content.className = "post_content";
-
-          post_content.innerHTML = "<p>"+data.value.message+"</p>"+"<small>"+data.value.name+"</small>";
+          post_content.className = data.value.postani;
+          post_content.style.background = data.value.postbgc;
+          post_content.innerHTML = "<p>"+data.value.message+"</p>"+"<small>By "+data.value.name+"</small>";
 
           // #post_space
           document.getElementById("post_space").appendChild(post_content);

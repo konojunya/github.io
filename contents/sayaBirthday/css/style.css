@@ -39,13 +39,11 @@ body,html{
 }
 .post_content{
   display: inline-block;
-  max-width: 300px;
-  background-color: rgba(107, 255, 219,0.4);
   border-radius: 10px;
   padding: 1%;
   margin: 1%;
 }
-/* mobile css*/
+ /*mobile css*/
 .mobile{
   display: none;
 }
