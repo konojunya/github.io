@@ -92,11 +92,10 @@
           post_content = document.createElement("div");
           post_content.className = "post_content";
 
-          post_content.innerHTML = "<p>"+data.value.message+"</p>";
-          // +"<small>"+data.value.name+"</small>"
+          post_content.innerHTML = "<p>"+data.value.message+"</p>"+"<small>"+data.value.name+"</small>";
 
           // #post_space
-          document.body.appendChild(post_content);
+          document.getElementById("post_space").appendChild(post_content);
         }
 
         function escapeHTML(val) {
