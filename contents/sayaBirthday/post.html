@@ -9,6 +9,7 @@
 <body>
   <div class="mobile message">
     <h1>さやへメッセージを届けよう！</h1>
+    <p class="err">メッセージと名前を入力してください！</p>
     <textarea type="text" id="post" placeholder="メッセージ" rows="5"></textarea>
     <input type="text" id="name" placeholder="お名前">
     <input type="submit" value="Post" id="postbtn">
@@ -60,17 +61,22 @@
 
           var content = escapeHTML($("#post").val());
           var name = escapeHTML($('#name').val());
-          if(content && content !== ""){
+          if(content !== "" && name !== ""){
             ds.push({
               message: content,
               name: name,
               postani: postani[aninum],
               postbgc: postbgc[bgcnum]
             },function(e){});
+            window.location = "view.html";
+            $("#post").val("");
+            $('#name').val("");
+          }else{
+            $('.err').fadeIn();
+            setTimeout(function(){
+              $('.err').fadeOut();
+            },3000);
           }
-          $("#post").val("");
-          $('#name').val("");
-          window.location = "view.html";
         }
 
         $('#postbtn').on('click',function(){
