@@ -91,8 +91,8 @@
             post_space = null;
         function renderMessage(data){
           post_content = document.createElement("div");
-          post_content.addClass("post_content");
-          post_content.addClass("post_ani1");
+          post_content.className = "post_content";
+          post_content.className = "post_ani1";
 
           post_content.innerHTML = "<p>"+data.value.message+"</p>";
           post_content.innerHTML = "<small>"+data.value.name+"</small>";
