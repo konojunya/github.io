@@ -14,10 +14,10 @@
     <h1>さやへメッセージを届けよう！</h1>
     <p class="err">メッセージと名前を入力してください！</p>
     <div class="mdl-textfield mdl-js-textfield">
-      <textarea type="text" class="mdl-textfield__input" type="text" id="post" placeholder="メッセージ" ></textarea>
+      <input class="mdl-textfield__input" type="text" id="name" placeholder="お名前">
     </div>
     <div class="mdl-textfield mdl-js-textfield">
-      <input class="mdl-textfield__input" type="text" id="name" placeholder="お名前">
+      <textarea type="text" class="mdl-textfield__input" type="text" id="post" placeholder="メッセージ" ></textarea>
     </div>
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="postbtn">Post!</button>
   </div>
@@ -63,7 +63,7 @@
                       ];
           var aninum = Math.floor(Math.random()*3);
           var bgcnum = Math.floor(Math.random()*15);
-          
+
           var content = escapeHTML($("#post").val());
           var name = escapeHTML($('#name').val());
           if(content !== "" && name !== ""){
