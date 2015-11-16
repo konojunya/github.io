@@ -100,7 +100,7 @@ h2{
 	z-index: 800;
 	.portfolio_contents{
 		width: 80%;
-		height: 60%;
+		height: 70%;
 		margin: 0 auto;
 		.portfolio_content{
 			width: 30%;
@@ -109,11 +109,11 @@ h2{
 			display: inline-block;
 			overflow: scroll;
 			.portfolio_img{
-				width: 30%;
+				height: 30%;
 				margin: 1% auto;
 				cursor: pointer;
 				img{
-					width: 100%;
+					height: 100%;
 				}
 			}
 		}
