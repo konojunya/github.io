@@ -1,324 +1,476 @@
-@charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
-@import url(https://fonts.googleapis.com/css?family=Satisfy);
-
-$mobileFontSize: 10px;
-
-html,body{
-	width: 100%;
-	height: 100%;
-	-webkit-overflow-scrolling: touch;
+@charset "UTF-8";
+// サイン風なfont
+// font-family: 'Stalemate', cursive;
+@import url(https://fonts.googleapis.com/css?family=Stalemate);
+// 普段使うfont
+// font-family: 'Averia Libre', cursive;
+@import url(https://fonts.googleapis.com/css?family=Averia+Libre:400,700);
+// 基本全部これ
+// font-family: 'Ubuntu', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+body,html{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27,17,79);
 }
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
-@mixin def{
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	position: fixed;
-	background-color: white;
+$n: rgb(27,17,79);
+$y: rgb(244, 214, 56);
+$mobileFont: 10px;
+$mobileFontH: 20px;
+$mobileFontlist: 13px;
+@mixin odd {
+  width: 100%;
+  background-color: $y;
+  padding: 10% 0;
+  h2{
+    color: $n;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-family: 'Stalemate', cursive;
+    font-size: 3rem;
+  }
+  p{
+    color: $n;
+    text-align: center;
+    font-size: 0.7rem;
+  }
 }
-
-.mobile{
-	font-size: $mobileFontSize;
-	line-height: 1.3rem;
+@mixin even {
+  width: 100%;
+  background-color: $n;
+  padding: 10% 0;
+  h2{
+    color: $y;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-family: 'Stalemate', cursive;
+    font-size: 3rem;
+  }
+  p{
+    color: $y;
+    text-align: center;
+    font-size: 0.7rem;
+  }
 }
-
-h2{
-	font-family: 'Satisfy', cursive;
-	font-size: 3rem;
-	padding: 5%;
-	text-shadow: 0px 0px 10px rgb(0,0,0);
-	color: white;
+.topAni{
+  width: 100%;
+  height: 100%;
+  background-color: $n;
+  position:fixed;
+  z-index: 10000000;
+  .hello{
+    width: 100%;
+    height: 10rem;
+    line-height: 10rem;
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-family: 'Averia Libre', cursive;
+    color: $y;
+  }
 }
-
-#top{
-	@include def;
-	z-index: 1000;
-	.name{
-		font-size: 3rem;
-	}
-	p{
-		font-family: 'Poiret One', cursive;
-		margin: 1% auto;
-		font-size: 1.5rem;
-		text-shadow: 0px 0px 15px rgb(0,0,0);
-		margin: 5% 0;
-	}
-	.icon{
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-		width: 15rem;
-		height: 15rem;
-		border-radius: 30%;
-		overflow: hidden;
-		margin: 5% auto;
-		img{
-			width: 100%;
-			height: 100%;
-		}
-	}
+.fa-bars{
+  display: none;
 }
-
-#history{
-	@include def;
-	z-index: 900;
-	.history_contents{
-		width: 80%;
-		height: 60%;
-		overflow: scroll;
-		margin: 0 auto;
-		ul{
-			padding-left: 3%;
-			text-align: left;
-			li{
-				line-height: 2rem;
-				list-style: none;
-				margin: 1% 0;
-				&:before{
-					content: "";
-					display: inline-block;
-					width: 10px;
-					height: 10px;
-					box-shadow: 0px 0px 10px #0053DD;
-					-webkit-transform: rotate(45deg);
-					-moz-transform: rotate(45deg);
-					-ms-transform: rotate(45deg);
-					-o-transform: rotate(45deg);
-					transform: rotate(45deg);
-				}
-			}
-		}
-	}
+.fa-remove{
+  display: none;
 }
-
+.navi{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: $n;
+  z-index: 100;
+  ul{
+    width: 70%;
+    margin: 0 auto;
+    li{
+      float: left;
+      list-style: none;
+      width: 20%;
+      a{
+        font-family: 'Averia Libre', cursive;
+        display: block;
+        width: 100%;
+        padding: 13% 0;
+        text-decoration: none;
+        color: rgb(252, 206, 35);
+        -webkit-transition: color .2s linear;
+        &:hover{
+          color: rgb(255, 248, 157);
+        }
+      }
+    }
+  }
+}
+#topBox{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $n;
+  h1{
+    color: $y;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    text-align: center;
+    font-family: 'Averia Libre', cursive;
+    &:before{
+      content: "";
+      display: block;
+      width: 15%;
+      height: 1px;
+      margin: 0 auto;
+      background-color: rgb(255, 248, 157);
+    }
+    &:after{
+      content: "";
+      display: block;
+      width: 15%;
+      height: 1px;
+      margin: 0 auto;
+      background-color: rgb(255, 248, 157);
+    }
+  }
+}
+#about{
+  @include odd;
+  .contents{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    .content{
+      width: 30%;
+      float: left;
+      padding: 0 10%;
+      h3{
+        color: rgb(21, 0, 93);
+        text-align: center;
+        padding: 1% 0;
+      }
+      ul{
+        background-color: $n;
+        padding: 3%;
+        border-radius: 10px;
+        li{
+          list-style: none;
+          margin: 1% 0;
+          color: $y;
+          line-height: 4rem;
+        }
+      }
+      .history_contents{
+        margin-left: 2%;
+        background-color: $n;
+        border-radius: 10px;
+        dl{
+          margin: 1% 0;
+          padding: 3%;
+          dt{
+            color: $y;
+          }
+          dd{
+            color: $y;
+            margin-left: 2%;
+            a{
+              color: $y;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 #portfolio{
-	@include def;
-	z-index: 800;
-	.portfolio_contents{
-		width: 80%;
-		height: 70%;
-		margin: 0 auto;
-		.portfolio_content{
-			width: 30%;
-			height: 80%;
-			padding: 5% 0;
-			display: inline-block;
-			overflow: scroll;
-			.portfolio_img{
-				height: 30%;
-				margin: 1% auto;
-				cursor: pointer;
-				img{
-					height: 100%;
-				}
-			}
-		}
-	}
+  @include even;
+  .protfolio_contents{
+    width: 95%;
+    margin: 3% auto;
+    overflow: hidden;
+    text-align: center;
+    .content{
+      width: 40%;
+      margin: 1%;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+      p{
+        width: 100%;
+        height: 20%;
+        background-color: rgba(0,0,0,0.7);
+        position: absolute;
+        bottom: 0;
+        color: white;
+        -webkit-transition: opacity .5s linear;
+        &:hover{
+          opacity: 0;
+        }
+      }
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
-
 #community{
-	@include def;
-	z-index: 700;
-	.community_contents{
-		width: 80%;
-		height: 60%;
-		overflow: scroll;
-		margin: 0 auto;
-		.community_content{
-			width: 30%;
-			margin: 0 auto;
-			padding: 5% 0;
-			display: inline-block;
-			p{
-				line-height: 2rem;
-				font-size: 0.8rem
-			}
-			.community_img{
-				width: 30%;
-				margin: 0 auto;
-				img{
-					width: 100%;
-				}
-			}
-		}
-	}
+  @include odd;
+  .community_contents{
+    width: 95%;
+    margin: 2% auto;
+    .content{
+      width: 74%;
+      margin: 1% auto 0;
+      overflow: hidden;
+      background-color: $n;
+      border-radius: 10px;
+      padding: 3%;
+      .img{
+        float: left;
+        width: 40%;
+        a{
+          display: block;
+          width: 100%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      p{
+        text-align: left;
+        float: left;
+        width: 56%;
+        color: $y;
+        padding: 2%;
+        line-height: 2rem;
+        a{
+          color: $y;
+        }
+      }
+    }
+  }
 }
-
 #contact{
-	@include def;
-	z-index: 600;
-	.sns{
-		width: 80%;
-		margin: 0 auto;
-		a{
-			text-decoration: none;
-			color: black;
-			margin: 0 5%;
-			&:hover{
-				color: rgba(153, 153, 153, 0.7);
-			}
-		}
-		.fa-twitter:hover {
-			color: #377bd3;
-		}
-		.fa-facebook:hover {
-			color: #314887;
-		}
-		.fa-google-plus:hover {
-			color: #bb4836;
-		}
-	}
+  @include even;
+  height: 100%;
+  .contact_contents{
+    width: 40%;
+    margin: 2% auto;
+    color: $y;
+    overflow: hidden;
+    dl{
+      width: 30%;
+      float: left;
+      margin: 0 10%;
+      dt{
+        margin: 5% 0;
+      }
+      dd{
+        margin-left: 10%;
+        a{
+          color: $y;
+        }
+      }
+    }
+  }
 }
-
-#top2{
-	@include def;
-	z-index: 500;
-	text-align: center;
-	a{
-		display: block;
-		color: black;
-		text-decoration: none;
-		font-family: 'Orbitron', sans-serif;
-		margin: 1% auto;
-		font-size: 3rem;
-		text-shadow: 0px 0px 15px #0051FF;
-		&:hover{
-			text-shadow: 0px 0px 15px #FF7400;
-		}
-	}
-	.icon{
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-		width: 15rem;
-		height: 15rem;
-		border-radius: 30%;
-		overflow: hidden;
-		margin: 5% auto;
-		img{
-			width: 100%;
-			height: 100%;
-		}
-	}
-	i{
-		display: block;
-		cursor: pointer;
-	}
+footer{
+  width: 100%;
+  background-color: $n;
+  position: relative;
+  text-align: center;
+  small{
+    padding: 5% 0;
+    color: $y;
+    letter-spacing: 0.5rem;
+  }
 }
-
-@media screen and (max-width: 414px) {
-	#top{
-		.name{
-			font-size: 3rem;
-		}
-		p{
-			margin: 1% auto;
-			font-size: 1.5rem;
-			margin: 5% 0;
-		}
-		.icon{
-			width: 10rem;
-			height: 10rem;
-			margin: 20% auto;
-		}
-	}
-
-	#history{
-		.history_contents{
-			li{
-				font-size: $mobileFontSize;
-				line-height: 2rem;
-			}
-		}
-	}
-
-	#portfolio{
-		.portfolio_contents{
-			width: 95%;
-			height: 70%;
-			margin: 0 auto;
-			padding: 5% 0;
-			box-shadow: 0px 0px 10px rgba(0,0,0,0);
-			.portfolio_content{
-				width: 45%;
-				height: auto;
-				padding: 0;
-				display: inline-block;
-				box-shadow: 0px 0px 5px rgb(0,0,0);
-				font-size: $mobileFontSize;
-				.portfolio_img{
-					width: 90%;
-					margin: 1% auto;
-					cursor: pointer;
-					img{
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
-
-	#community{
-		.community_contents{
-			width: 95%;
-			height: 70%;
-			margin: 0 auto;
-			.community_content{
-				width: 45%;
-				margin: 0 auto;
-				padding: 5% 0;
-				display: inline-block;
-				p{
-					line-height: 1rem;
-					font-size: $mobileFontSize;
-				}
-				.community_img{
-					width: 90%;
-					margin: 0 auto;
-					img{
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
-
-	#contact{
-		.sns{
-			width: 70%;
-			text-align: center;
-			a{
-				display: block;
-				margin: 3% 0%;
-			}
-		}
-	}
-
-	#top2{
-		@include def;
-		z-index: 500;
-		text-align: center;
-		a{
-			color: black;
-			text-decoration: none;
-			font-family: 'Orbitron', sans-serif;
-			margin: 5% auto;
-			font-size: 1.5rem;
-			text-shadow: 0px 0px 15px #0051FF;
-		}
-		.icon{
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-			width: 15rem;
-			height: 15rem;
-			border-radius: 30%;
-			overflow: hidden;
-			margin: 5% auto;
-			img{
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
+@media only screen and (max-width: 1024px){
+  h2{
+    font-size: $mobileFontH;
+  }
+  .topAni{
+    .hello{
+      height: 2rem;
+      line-height: 2rem;
+      font-size: 2rem;
+    }
+  }
+  .fa-bars{
+    display: inline;
+    color: rgb(40, 40, 40);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    text-shadow: 0px 0px 5px white;
+  }
+  .fa-remove{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: $y;
+  }
+  .navi{
+    display: none;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    ul{
+      width: 70%;
+      margin: 0 auto;
+      li{
+        float: none;
+        width: 100%;
+        a{
+          padding: 13% 0;
+          text-decoration: none;
+          color: rgb(252, 206, 35);
+          -webkit-transition: color .2s linear;
+          &:hover{
+            color: rgb(255, 248, 157);
+          }
+        }
+      }
+    }
+  }
+  #topBox{
+    h1{
+      &:before{
+        width: 10rem;
+      }
+      &:after{
+        width: 10rem;
+      }
+    }
+  }
+  #about{
+    @include odd;
+    .contents{
+      width: 90%;
+      margin: 0 auto;
+      .content{
+        width: 60%;
+        float: none;
+        padding: 0 10%;
+        margin: 10% auto;
+        ul{
+          padding: 3%;
+          li{
+            font-size: $mobileFont;
+            line-height: 2rem;
+          }
+        }
+        .history_contents{
+          margin-left: 2%;
+          dl{
+            margin: 1% 0;
+            padding: 3%;
+            font-size: $mobileFont;
+            dd{
+              margin-left: 2%;
+            }
+          }
+        }
+      }
+    }
+  }
+  #portfolio{
+    @include even;
+    .protfolio_contents{
+      .content{
+        width: 90%;
+        margin: 2% auto;
+        display: block;
+        p{
+          height: 30%;
+        }
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  #community{
+    @include odd;
+    .community_contents{
+      .content{
+        width: 80%;
+        margin: 1% auto 0;
+        padding: 3%;
+        .img{
+          width: 100%;
+          a{
+            display: block;
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
+        p{
+          text-align: left;
+          width: 80%;
+          margin: 0 auto;
+          color: $y;
+          padding: 2%;
+          line-height: 2rem;
+          a{
+            color: $y;
+          }
+        }
+      }
+    }
+  }
+  #contact{
+    @include even;
+    .contact_contents{
+      dl{
+        width: 100%;
+        float: both;
+        margin: 0 10%;
+        dt{
+          margin: 5% 0;
+        }
+        dd{
+          margin-left: 10%;
+          a{
+            color: $y;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    small{
+      letter-spacing: 0.3rem;
+    }
+  }
 }
