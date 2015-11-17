@@ -20,7 +20,7 @@ $(function(){
     var header_height = $('.navi').height();
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top - header_height + 1;
+    var position = target.offset().top;
     if(_ua.Mobile || _ua.Tablet){
       $('.navi').fadeOut();
       $('fa-remove').hide();

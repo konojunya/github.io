@@ -320,17 +320,18 @@ footer{
     }
   }
   .fa-bars{
-    display: inline;
-    color: rgb(40, 40, 40);
+    display: block;
+    color: $y;
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     left: 20px;
     z-index: 1000;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 0px 0px 1px $n;
   }
   .fa-remove{
+    display: block;
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     left: 20px;
     color: $y;
   }
@@ -407,9 +408,6 @@ footer{
         width: 90%;
         margin: 2% auto;
         display: block;
-        p{
-          height: 30%;
-        }
         a{
           display: block;
           width: 100%;
@@ -455,7 +453,7 @@ footer{
       dl{
         width: 100%;
         float: both;
-        margin: 0 10%;
+        margin: 0;
         dt{
           margin: 5% 0;
         }
