@@ -435,13 +435,13 @@ footer{
         }
         p{
           text-align: left;
-          width: 80%;
-          margin: 0 auto;
+          width: 95%;
           color: $y;
-          padding: 2%;
           line-height: 2rem;
+          font-size: $mobileFont;
           a{
             color: $y;
+            font-size: $mobileFont;
           }
         }
       }
