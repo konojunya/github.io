@@ -154,49 +154,22 @@ $mobileFontlist: 13px;
 }
 #about{
   @include odd;
-  .contents{
-    width: 90%;
+  dl{
+    padding: 5% 0;
+    width: 50%;
     margin: 0 auto;
-    overflow: hidden;
-    .content{
-      width: 30%;
-      float: left;
-      padding: 0 10%;
-      h3{
-        color: rgb(21, 0, 93);
-        text-align: center;
-        padding: 1% 0;
+    dt{
+      color: rgb(50,50,50);
+      padding: 1% 0;
+      span{
+        color: $n;
+        font-weight: bold;
       }
-      ul{
-        background-color: $n;
-        padding: 3%;
-        border-radius: 10px;
-        li{
-          list-style: none;
-          margin: 1% 0;
-          color: $y;
-          line-height: 4rem;
-        }
-      }
-      .history_contents{
-        margin-left: 2%;
-        background-color: $n;
-        border-radius: 10px;
-        dl{
-          margin: 1% 0;
-          padding: 3%;
-          dt{
-            color: $y;
-          }
-          dd{
-            color: $y;
-            margin-left: 2%;
-            a{
-              color: $y;
-            }
-          }
-        }
-      }
+    }
+    dd{
+      color: rgb(50,50,50);
+      padding: 1% 0;
+      margin-left: 5%;
     }
   }
 }
@@ -372,32 +345,22 @@ footer{
   }
   #about{
     @include odd;
-    .contents{
-      width: 90%;
+    dl{
+      padding: 5% 0;
+      width: 80%;
       margin: 0 auto;
-      .content{
-        width: 60%;
-        float: none;
-        padding: 0 10%;
-        margin: 10% auto;
-        ul{
-          padding: 3%;
-          li{
-            font-size: $mobileFont;
-            line-height: 2rem;
-          }
+      dt{
+        color: rgb(50,50,50);
+        padding: 5% 0;
+        span{
+          color: $n;
+          font-weight: bold;
         }
-        .history_contents{
-          margin-left: 2%;
-          dl{
-            margin: 1% 0;
-            padding: 3%;
-            font-size: $mobileFont;
-            dd{
-              margin-left: 2%;
-            }
-          }
-        }
+      }
+      dd{
+        color: rgb(50,50,50);
+        padding: 5% 0;
+        margin-left: 10%;
       }
     }
   }
