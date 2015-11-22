@@ -1,58 +1,46 @@
 @charset "UTF-8";
-// サイン風なfont
 // font-family: 'Stalemate', cursive;
 @import url(https://fonts.googleapis.com/css?family=Stalemate);
-// 普段使うfont
 // font-family: 'Averia Libre', cursive;
 @import url(https://fonts.googleapis.com/css?family=Averia+Libre:400,700);
-// 基本全部これ
 // font-family: 'Ubuntu', sans-serif;
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 body,html{
   width: 100%;
   height: 100%;
-  background-color: rgb(27,17,79);
 }
 *{
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
 }
-$n: rgb(27,17,79);
-$y: rgb(244, 214, 56);
 $mobileFont: 10px;
 $mobileFontH: 20px;
 $mobileFontlist: 13px;
 @mixin odd {
   width: 100%;
-  background-color: $y;
   padding: 10% 0;
   h2{
-    color: $n;
     text-align: center;
     letter-spacing: 1rem;
     font-family: 'Stalemate', cursive;
     font-size: 3rem;
   }
   p{
-    color: $n;
     text-align: center;
     font-size: 0.7rem;
   }
 }
 @mixin even {
   width: 100%;
-  background-color: $n;
   padding: 10% 0;
   h2{
-    color: $y;
     text-align: center;
     letter-spacing: 1rem;
     font-family: 'Stalemate', cursive;
     font-size: 3rem;
   }
   p{
-    color: $y;
     text-align: center;
     font-size: 0.7rem;
   }
@@ -60,7 +48,6 @@ $mobileFontlist: 13px;
 .topAni{
   width: 100%;
   height: 100%;
-  background-color: $n;
   position:fixed;
   z-index: 10000000;
   .hello{
@@ -76,14 +63,20 @@ $mobileFontlist: 13px;
     margin: auto;
     text-align: center;
     font-family: 'Averia Libre', cursive;
-    color: $y;
   }
 }
 .fa-bars{
   display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
 }
 .fa-remove{
   display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 .navi{
   position: fixed;
@@ -92,7 +85,6 @@ $mobileFontlist: 13px;
   width: 100%;
   overflow: hidden;
   text-align: center;
-  background-color: $n;
   z-index: 100;
   ul{
     width: 70%;
@@ -107,11 +99,6 @@ $mobileFontlist: 13px;
         width: 100%;
         padding: 13% 0;
         text-decoration: none;
-        color: rgb(252, 206, 35);
-        -webkit-transition: color .2s linear;
-        &:hover{
-          color: rgb(255, 248, 157);
-        }
       }
     }
   }
@@ -120,9 +107,7 @@ $mobileFontlist: 13px;
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: $n;
   h1{
-    color: $y;
     width: 100%;
     height: 5rem;
     line-height: 5rem;
@@ -140,7 +125,6 @@ $mobileFontlist: 13px;
       width: 15%;
       height: 1px;
       margin: 0 auto;
-      background-color: rgb(255, 248, 157);
     }
     &:after{
       content: "";
@@ -148,7 +132,6 @@ $mobileFontlist: 13px;
       width: 15%;
       height: 1px;
       margin: 0 auto;
-      background-color: rgb(255, 248, 157);
     }
   }
 }
@@ -159,15 +142,12 @@ $mobileFontlist: 13px;
     width: 50%;
     margin: 0 auto;
     dt{
-      color: rgb(50,50,50);
       padding: 1% 0;
       span{
-        color: $n;
         font-weight: bold;
       }
     }
     dd{
-      color: rgb(50,50,50);
       padding: 1% 0;
       margin-left: 5%;
     }
@@ -218,7 +198,6 @@ $mobileFontlist: 13px;
       width: 74%;
       margin: 1% auto 0;
       overflow: hidden;
-      background-color: $n;
       border-radius: 10px;
       padding: 3%;
       .img{
@@ -236,11 +215,9 @@ $mobileFontlist: 13px;
         text-align: left;
         float: left;
         width: 56%;
-        color: $y;
         padding: 2%;
         line-height: 2rem;
         a{
-          color: $y;
         }
       }
     }
@@ -252,7 +229,6 @@ $mobileFontlist: 13px;
   .contact_contents{
     width: 40%;
     margin: 2% auto;
-    color: $y;
     overflow: hidden;
     dl{
       width: 30%;
@@ -264,7 +240,6 @@ $mobileFontlist: 13px;
       dd{
         margin-left: 10%;
         a{
-          color: $y;
         }
       }
     }
@@ -272,12 +247,9 @@ $mobileFontlist: 13px;
 }
 footer{
   width: 100%;
-  background-color: $n;
-  position: relative;
   text-align: center;
+  padding: 5% 0;
   small{
-    padding: 5% 0;
-    color: $y;
     letter-spacing: 0.5rem;
   }
 }
@@ -294,19 +266,9 @@ footer{
   }
   .fa-bars{
     display: block;
-    color: $y;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    text-shadow: 0px 0px 1px $n;
   }
   .fa-remove{
     display: block;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: $y;
   }
   .navi{
     display: none;
@@ -324,11 +286,6 @@ footer{
         a{
           padding: 13% 0;
           text-decoration: none;
-          color: rgb(252, 206, 35);
-          -webkit-transition: color .2s linear;
-          &:hover{
-            color: rgb(255, 248, 157);
-          }
         }
       }
     }
@@ -350,15 +307,12 @@ footer{
       width: 80%;
       margin: 0 auto;
       dt{
-        color: rgb(50,50,50);
         padding: 5% 0;
         span{
-          color: $n;
           font-weight: bold;
         }
       }
       dd{
-        color: rgb(50,50,50);
         padding: 5% 0;
         margin-left: 10%;
       }
@@ -399,11 +353,9 @@ footer{
         p{
           text-align: left;
           width: 95%;
-          color: $y;
           line-height: 2rem;
           font-size: $mobileFont;
           a{
-            color: $y;
             font-size: $mobileFont;
           }
         }
@@ -422,9 +374,6 @@ footer{
         }
         dd{
           margin-left: 10%;
-          a{
-            color: $y;
-          }
         }
       }
     }
