@@ -11,11 +11,11 @@ $(function(){
     ["rgb(27, 17, 79)","rgb(244, 214, 56)"]
   ];
 
-  if(hours >= 5 && hours < 13){
+  if(hours >= 5 && hours < 12){
     // 5:00:00 ~ 12:59:59
     setColor(color[0][0],color[0][1]);
     $('.fa-sun-o').show();
-  }else if(hours >= 13 && hours < 19){
+  }else if(hours >= 12 && hours < 19){
     // 13:00:00 ~ 18:59:59
     setColor(color[1][0],color[1][1]);
     $('.fa-cloud').show();
