@@ -19,7 +19,7 @@ $(function(){
     // 13:00:00 ~ 18:59:59
     setColor(color[1][0],color[1][1]);
     $('.fa-cloud').show();
-  }else if(hours >= 19 && hours < 5){
+  }else{
     // 19:00:00 ~ 4:59:59
     setColor(color[2][0],color[2][1]);
     $('.fa-moon-o').show();
