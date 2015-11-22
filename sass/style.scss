@@ -65,6 +65,30 @@ $mobileFontlist: 13px;
     font-family: 'Averia Libre', cursive;
   }
 }
+.fa-sun-o{
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: rgb(247, 126, 0);
+  z-index: 1100;
+}
+.fa-cloud{
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: rgb(203, 203, 203);
+  z-index: 1100;
+}
+.fa-moon-o{
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: rgb(255, 241, 52);
+  z-index: 1100;
+}
 .fa-bars{
   display: none;
   position: fixed;
