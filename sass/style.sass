@@ -134,7 +134,9 @@ $mobileFontlist: 13px
     margin: 0 auto
     dt
       padding: 1% 0
-      span
+      &::before
+        content: "##"
+      &:first-letter
         font-weight: bold
     dd
       padding: 1% 0
@@ -184,6 +186,8 @@ $mobileFontlist: 13px
       .img
         float: left
         width: 40%
+        overflow: hidden
+        border-radius: 10px
         a
           display: block
           width: 100%
