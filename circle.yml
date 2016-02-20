@@ -1,3 +1,5 @@
-test:
-  override:
-    - exit 0
+deployment:
+  test:
+    branch: master
+    commands:
+      - exit 0
